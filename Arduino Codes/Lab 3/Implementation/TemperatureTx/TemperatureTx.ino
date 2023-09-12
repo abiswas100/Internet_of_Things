@@ -16,6 +16,10 @@ int tempCount = 0;  // Count of temperatures added to the buffer
 int reportCount = 0;  // Count of readings before reporting
 float avgTemperature = 0;  // To hold the average temperature
 bool newAvgAvailable = false;  // Flag to indicate a new average is available
+RH_RF95 rf95(12, 6);
+int LED = 13; //Status LED is on pin 13
+int packetCounter = 0; //Counts the number of packets sent
+long timeSinceLastPacket = 0; //Tracks the time stamp of last packet received
 
 
 void setup() {
