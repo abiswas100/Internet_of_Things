@@ -1,6 +1,14 @@
 #define CPU_HZ 48000000
 #define TIMER_PRESCALER_DIV 1024
 #define WINDOW_SIZE 5  // Size of the sliding window
+
+struct Packet {
+  uint8_t nodeID;
+  uint16_t packetID;
+  uint32_t timestamp;
+  float payload;
+};
+
 #include <SPI.h>
 //Radio Head Library:
 #include <RH_RF95.h>
@@ -20,10 +28,10 @@ bool newAvgAvailable = false;  // Flag to indicate a new average is available
 // We need to provide the RFM95 module's chip select and interrupt pins to the, rf95 instance below.On the SparkFun ProRF those pins are 12 and 6 respectively.
 RH_RF95 rf95(12, 6);
 int LED = 13; //Status LED is on pin 13
-int packetCounter = 0; //Counts the number of packets sent
 long timeSinceLastPacket = 0; //Tracks the time stamp of last packet received
 
 float frequency = 910; //Broadcast frequency
+uint16_t packetCounter = 0;  // Initialize packet counter
 
 void setup() {
   SerialUSB.begin(9600);
