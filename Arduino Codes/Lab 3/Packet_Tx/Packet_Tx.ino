@@ -25,7 +25,7 @@ void setup()
     if (rf95.init() == false) {
         SerialUSB.println("Radio Init Failed - Freezing");
         while (1);
-    }
+}
     else {
         //An LED inidicator to let us know radio initialization has completed.
         // rf95.setModemConfig(Bw125Cr48Sf4096); // slow and reliable?
@@ -55,3 +55,4 @@ void loop()
     //rf95.waitPacketSent();
     delay(1000);
 }
+

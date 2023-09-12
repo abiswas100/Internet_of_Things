@@ -11,6 +11,8 @@ int tempIndex = 0;  // Index to keep track of the oldest temperature value
 float tempSum = 0;  // Sum of temperatures in the buffer
 int tempCount = 0;  // Count of temperatures added to the buffer
 int reportCount = 0;  // Count of readings before reporting
+float avgTemperature = 0;  // To hold the average temperature
+bool newAvgAvailable = false;  // Flag to indicate a new average is available
 
 
 void setup() {
@@ -22,6 +24,11 @@ void setup() {
 
 void loop() {
   Readtemp();
+  if (newAvgAvailable) {
+    SerialUSB.print("Average Temperature over last 5 seconds is: ");
+    SerialUSB.println(avgTemperature);
+    newAvgAvailable = false;  // Reset the flag
+  }
 }
 
 void startTimer(int frequencyHz) {
@@ -70,11 +77,10 @@ void TC3_Handler() {
   }
 }
 
-void Readtemp() {
+float Readtemp() {
   if (canReadTemp) {
     float temperature = TempZero.readInternalTemperature();
-    SerialUSB.print("Internal Temperature is: ");
-    SerialUSB.println(avgTemperature);
+
     // Remove the oldest temperature from the sum
     tempSum -= tempBuffer[tempIndex];
     
@@ -93,18 +99,14 @@ void Readtemp() {
     // Increment the report counter
     reportCount++;
 
-    // If 5 readings have been taken, report the average temperature
+    // If 5 readings have been taken, calculate the average temperature
     if (reportCount >= WINDOW_SIZE) {
-      float avgTemperature = tempSum / tempCount;
-      SerialUSB.print("Average Temperature over last 5 seconds is: ");
-      SerialUSB.println(avgTemperature);
+      avgTemperature = tempSum / tempCount;
+      newAvgAvailable = true;  // Set the flag
       reportCount = 0;  // Reset the report counter
     }
 
     canReadTemp = false;
   }
+  return avgTemperature;
 }
-
-
-
-

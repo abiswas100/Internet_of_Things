@@ -1,5 +1,5 @@
 void setup() {
-  //SerialUSB.begin(9600);
+  SerialUSB.begin(9600);
   pinMode(PIN_LED_13, OUTPUT);
 }
 
