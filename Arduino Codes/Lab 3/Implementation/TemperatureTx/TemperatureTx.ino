@@ -3,6 +3,9 @@
 #define WINDOW_SIZE 5  // Size of the sliding window
 
 #include <TemperatureZero.h>
+#include <SPI.h>
+//Radio Head Library:
+#include <RH_RF95.h>
 
 TemperatureZero TempZero = TemperatureZero();
 volatile bool canReadTemp = false;
