@@ -28,8 +28,32 @@ float frequency = 910; //Broadcast frequency
 void setup() {
   SerialUSB.begin(9600);
   TempZero.init();
+      // It may be difficult to read serial messages on startup. The following line
+    // will wait for serial to be ready before continuing. Comment out if not needed.
+    // while (!SerialUSB);
+    SerialUSB.println("RFM Client!");
+    //Initialize the Radio.
+    if (rf95.init() == false) {
+        SerialUSB.println("Radio Init Failed - Freezing");
+        while (1);
+}
+    else {
+        //An LED inidicator to let us know radio initialization has completed.
+        // rf95.setModemConfig(Bw125Cr48Sf4096); // slow and reliable?
+        SerialUSB.println("Transmitter up!");
+        digitalWrite(LED, HIGH);
+        delay(500);
+        digitalWrite(LED, LOW);
+        delay(500);
+        }
+        // Set frequency
+        rf95.setFrequency(frequency);
+        // Transmitter power can range from 14-20dbm.
+        rf95.setTxPower(20, false);
+
   pinMode(PIN_LED_13, OUTPUT);
   startTimer(1);
+
 }
 
 void loop() {
@@ -37,6 +61,13 @@ void loop() {
   if (newAvgAvailable) {
     SerialUSB.print("Average Temperature over last 5 seconds is: ");
     SerialUSB.println(avgTemperature);
+    SerialUSB.println("Sending message");
+    //Send a message to the other radio
+    char toSend[] = "pew";
+    packetCounter = packetCounter++;
+    SerialUSB.println(toSend);
+    SerialUSB.println(packetCounter);
+    rf95.send((uint8_t *)toSend, sizeof(toSend));
     newAvgAvailable = false;  // Reset the flag
   }
 }
