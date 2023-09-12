@@ -1,9 +1,9 @@
-/*
-Both the TX and RX ProRF boards will need a wire antenna. We recommend a 3" piece of wire.
-This example is a modified version of the example provided by the Radio Head
-Library which can be found here:
-www.github.com/PaulStoffregen/RadioHeadd
-*/
+struct Packet {
+  uint8_t nodeID;
+  uint16_t packetID;
+  uint32_t timestamp;
+  float payload;
+};
 
 
 #include <SPI.h>
@@ -15,11 +15,6 @@ RH_RF95 rf95(12, 6);
 int LED = 13; //Status LED is on pin 13
 int packetCounter = 0; //Counts the number of packets sent
 long timeSinceLastPacket = 0; //Tracks the time stamp of last packet received
-// The broadcast frequency is set to 921.2, but the SADM21 ProRf operates
-// anywhere in the range of 902-928MHz in the Americas.
-// Europe operates in the frequencies 863-870, center frequency at 868MHz.
-// This works but it is unknown how well the radio configures to this frequency:
-//float frequency = 864.1;
 float frequency = 910; //Broadcast frequency
 
 
@@ -62,11 +57,27 @@ void loop()
         uint8_t len = sizeof(buf);
         if (rf95.recv(buf, &len))
         {
+            // Cast the received buffer to the Packet struct type
+            Packet *receivedPacket = (Packet *)buf;
             buf[len] = '\0';  // Null-terminate the received string
             digitalWrite(LED, HIGH); //Turn on status LED
             timeSinceLastPacket = millis(); //Timestamp this packet
-            SerialUSB.print("Got message: ");
-            SerialUSB.print((char*)buf);
+            
+            // SerialUSB.print("Got message: ");
+            // SerialUSB.print((char*)buf);
+            // SerialUSB.print(" RSSI: ");
+            // SerialUSB.print(rf95.lastRssi(), DEC);
+            // SerialUSB.println();
+
+                        // Print the received packet details
+            SerialUSB.print("Got message from Node ID: ");
+            SerialUSB.print(receivedPacket->nodeID);
+            SerialUSB.print(", Packet ID: ");
+            SerialUSB.print(receivedPacket->packetID);
+            SerialUSB.print(", Timestamp: ");
+            SerialUSB.print(receivedPacket->timestamp);
+            SerialUSB.print(", Payload (Temperature): ");
+            SerialUSB.print(receivedPacket->payload);
             SerialUSB.print(" RSSI: ");
             SerialUSB.print(rf95.lastRssi(), DEC);
             SerialUSB.println();
