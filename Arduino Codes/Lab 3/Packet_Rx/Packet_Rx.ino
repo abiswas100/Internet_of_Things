@@ -60,8 +60,25 @@ void loop()
         // Should be a message for us now
         uint8_t buf[RH_RF95_MAX_MESSAGE_LEN];
         uint8_t len = sizeof(buf);
+        // if (rf95.recv(buf, &len))
+        // {
+        //     digitalWrite(LED, HIGH); //Turn on status LED
+        //     timeSinceLastPacket = millis(); //Timestamp this packet
+        //     SerialUSB.print("Got message: ");
+        //     SerialUSB.print((char*)buf);
+        //     SerialUSB.print(" RSSI: ");
+        //     SerialUSB.print(rf95.lastRssi(), DEC);
+        //     SerialUSB.println();
+        //     // // Send a reply
+        //     // uint8_t toSend[] = "Hello Back!";
+        //     // rf95.send(toSend, sizeof(toSend));
+        //     // rf95.waitPacketSent();
+        //     // SerialUSB.println("Sent a reply");
+        //     // digitalWrite(LED, LOW); //Turn off status LED
+        // }
         if (rf95.recv(buf, &len))
         {
+            buf[len] = '\0';  // Null-terminate the received string
             digitalWrite(LED, HIGH); //Turn on status LED
             timeSinceLastPacket = millis(); //Timestamp this packet
             SerialUSB.print("Got message: ");
@@ -69,12 +86,6 @@ void loop()
             SerialUSB.print(" RSSI: ");
             SerialUSB.print(rf95.lastRssi(), DEC);
             SerialUSB.println();
-            // // Send a reply
-            // uint8_t toSend[] = "Hello Back!";
-            // rf95.send(toSend, sizeof(toSend));
-            // rf95.waitPacketSent();
-            // SerialUSB.println("Sent a reply");
-            // digitalWrite(LED, LOW); //Turn off status LED
         }
         else
         SerialUSB.println("Recieve failed");

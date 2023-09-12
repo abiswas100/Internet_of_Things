@@ -59,18 +59,26 @@ void setup() {
 void loop() {
   Readtemp();
   if (newAvgAvailable) {
+    // Print and send the average temperature
     SerialUSB.print("Average Temperature over last 5 seconds is: ");
     SerialUSB.println(avgTemperature);
-    SerialUSB.println("Sending message");
-    //Send a message to the other radio
-    char toSend[] = "pew";
-    packetCounter = packetCounter++;
+
+    // Create the message to send
+    char toSend[10];  // Adjust the size as needed
+    snprintf(toSend, sizeof(toSend), "%.2f", avgTemperature);  // %.2f formats the float with 2 decimal places
+
+    // Print and send the message
+    SerialUSB.print("Sending message: ");
     SerialUSB.println(toSend);
-    SerialUSB.println(packetCounter);
-    rf95.send((uint8_t *)toSend, sizeof(toSend));
-    newAvgAvailable = false;  // Reset the flag
+    rf95.send((uint8_t *)toSend, strlen(toSend));
+
+    // Reset the flag
+    newAvgAvailable = false;
   }
 }
+
+
+
 
 void startTimer(int frequencyHz) {
   configureClockTC4();
