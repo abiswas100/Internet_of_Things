@@ -71,20 +71,26 @@ void loop() {
     SerialUSB.print("Average Temperature over last 5 seconds is: ");
     SerialUSB.println(avgTemperature);
 
-    // Create the message to send
-    char toSend[10];  // Adjust the size as needed
-    snprintf(toSend, sizeof(toSend), "%.2f", avgTemperature);  // %.2f formats the float with 2 decimal places
+    // Create the packet
+    Packet packet;
+    packet.nodeID = 1;  // Node 1
+    packet.packetID = packetCounter++;
+    packet.timestamp = millis();  // Current time in milliseconds
+    packet.payload = avgTemperature;
+
+    // Serialize the packet into a byte array
+    uint8_t toSend[sizeof(Packet)];
+    memcpy(toSend, &packet, sizeof(Packet));
 
     // Print and send the message
-    SerialUSB.print("Sending message: ");
-    SerialUSB.println(toSend);
-    rf95.send((uint8_t *)toSend, strlen(toSend));
+    SerialUSB.print("Sending packet with ID: ");
+    SerialUSB.println(packet.packetID);
+    rf95.send(toSend, sizeof(Packet));
 
     // Reset the flag
     newAvgAvailable = false;
   }
 }
-
 
 
 
