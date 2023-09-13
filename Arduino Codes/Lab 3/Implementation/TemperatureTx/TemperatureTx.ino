@@ -36,7 +36,7 @@ uint16_t packetCounter = 0;  // Initialize packet counter
 void setup() {
   SerialUSB.begin(9600);
   TempZero.init();
-      // It may be difficult to read serial messages on startup. The following line
+    // It may be difficult to read serial messages on startup. The following line
     // will wait for serial to be ready before continuing. Comment out if not needed.
     // while (!SerialUSB);
     SerialUSB.println("RFM Client!");
