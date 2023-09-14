@@ -28,7 +28,7 @@ struct Packet {
     memset(error, '0', sizeof(error));
   }
 };
-                                            
+
 volatile bool canReadTemp = false;
 volatile bool Node1asked = false;
 
@@ -155,8 +155,8 @@ void loop()
             // Check if this is the Master Node if so then send the Packet
             if(receivedPacket->nodeID == 1 && receivedPacket->authID == 4)
             {
-              // if (Node1asked == false)
-              // {
+              if (Node1asked == false)
+              {
                 Node1asked = true;
                 //Print and send the average temperature
                 SerialUSB.print("Average Temperature over last 5 seconds is: ");
@@ -180,7 +180,7 @@ void loop()
                 SerialUSB.println(packet.packetID);
 
                 rf95.send(toSend, sizeof(Packet));
-              // } 
+              } 
             }
 
             else
