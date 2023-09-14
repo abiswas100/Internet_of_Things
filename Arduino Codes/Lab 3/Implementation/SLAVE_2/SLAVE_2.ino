@@ -21,12 +21,18 @@ FlashStorage(error_storage, uint16_t);
 char error_bits[16];
 
 struct Packet {
-  int nodeID;
+  uint8_t nodeID;
   uint16_t packetID;
   uint32_t timestamp;
   float payload;
+  char error[16];
   uint8_t authID;
-  char error[16]={'0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'}; 
+
+  // Constructor to initialize the values
+  Packet() : nodeID(0), packetID(0), timestamp(0), payload(0.0), authID(0) {
+    // Initialize the error array to zeros
+    memset(error, '0', sizeof(error));
+  }
 };
                                                                  
 volatile bool canReadTemp = false;

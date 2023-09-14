@@ -15,14 +15,20 @@ FlashStorage(error_storage, uint16_t);
 char error_bits[16];
 
 struct Packet {
-  int nodeID;
+  uint8_t nodeID;
   uint16_t packetID;
   uint32_t timestamp;
   float payload;
+  char error[16];
   uint8_t authID;
-  char error[16]={'0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'}; 
+
+  // Constructor to initialize the values
+  Packet() : nodeID(0), packetID(0), timestamp(0), payload(0.0), authID(0) {
+    // Initialize the error array to zeros
+    memset(error, '0', sizeof(error));
+  }
 };
-                                                                 
+                                            
 volatile bool canReadTemp = false;
 volatile bool Node1asked = false;
 
@@ -123,7 +129,7 @@ void setup()
 
 void loop() 
 {    
-    Readtemp();
+    avgTemperature = Readtemp();
 
      // if (newAvgAvailable) {
      //   // Reset the flag
@@ -144,13 +150,13 @@ void loop()
 
             // Print the received packet details
             SerialUSB.print("Got message from Node ID: ");
-            SerialUSB.print(receivedPacket->nodeID);
+            SerialUSB.println(receivedPacket->nodeID);
 
             // Check if this is the Master Node if so then send the Packet
             if(receivedPacket->nodeID == 1 && receivedPacket->authID == 4)
             {
-              if (Node1asked == false)
-              {
+              // if (Node1asked == false)
+              // {
                 Node1asked = true;
                 //Print and send the average temperature
                 SerialUSB.print("Average Temperature over last 5 seconds is: ");
@@ -174,7 +180,7 @@ void loop()
                 SerialUSB.println(packet.packetID);
 
                 rf95.send(toSend, sizeof(Packet));
-              } 
+              // } 
             }
 
             else
@@ -189,7 +195,7 @@ void loop()
               SerialUSB.print(" RSSI: ");
               SerialUSB.print(rf95.lastRssi(), DEC);
               SerialUSB.println();
-              delay(500);
+              // delay(500);
               current_packet_id = receivedPacket->packetID;    //Assign the current packet ID to the current_packet_id variable 
                 
               if(current_packet_id-previouse_packet_id > 1)            //check the missing packet 
