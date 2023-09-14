@@ -1,4 +1,4 @@
-//SERVER NODE
+//MASTER  NODE = 1
 
 #define CPU_HZ 48000000
 #define TIMER_PRESCALER_DIV 1024
@@ -17,11 +17,12 @@ FlashStorage(error_Avhishek, int);
 FlashStorage(error_receive, int);
 
 struct Packet {
-  String nodeID;
+  uint8_t nodeID;
   uint16_t packetID;
   uint32_t timestamp;
   float payload;
-  String error;
+  int error;
+  uint8_t authID;
 };
                                                                  
 volatile bool canReadTemp = false;
@@ -89,7 +90,7 @@ void setup() {
      WDT->CTRL.bit.WEN = 0; 
      SerialUSB.begin(9600);
      TempZero.init();
-    // It may be difficult to read serial messages on startup. The following line
+      // It may be difficult to read serial messages on startup. The following line
     // will wait for serial to be ready before continuing. Comment out if not needed.
     // while (!SerialUSB);
      SerialUSB.println("RFM Client!");
@@ -127,7 +128,7 @@ void loop()
 
       // Create the packet
       Packet packet;
-      packet.nodeID = "Amlan";  // Node 1
+      packet.nodeID = 1;  // Node 1
       packet.packetID = packetCounter++;
       packet.timestamp = millis();  // Current time in milliseconds
       packet.payload = avgTemperature;
@@ -196,7 +197,7 @@ void loop()
          else
          {
          SerialUSB.println("Recieve failed");
-         write_error("PKTError", 18);                               // Save the error code as message receive failed 
+         write_error(5, 18);                               // Save the error code as message receive failed 
          }
      }
      timeSinceLastPacket = millis();                                
@@ -284,21 +285,21 @@ float Readtemp() {
 }
 
 
-void write_error(String Node_name, int ecode)
+void write_error(uint8_t Node_name, int ecode)
 {
-  if(Node_name=="Amlan")
+  if(Node_name==3)
   {error_Amlan.write(ecode);}
 
-   if(Node_name=="Shaswati")
+   if(Node_name==2)
   {error_Shaswati.write(ecode);}
 
-    if(Node_name=="Anuruddha")
+    if(Node_name==4)
   {error_Anuruddha.write(ecode);}
 
-    if(Node_name=="Avhishek")
+    if(Node_name==1)
   {error_Avhishek.write(ecode);}
     
-    if(Node_name=="PKTError")
+    if(Node_name==5)
   {error_receive.write(ecode);}
 
 }
