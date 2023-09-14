@@ -20,11 +20,13 @@ FlashStorage(error_storage, uint16_t);
 uint16_t error_bits = 0x0000;
 
 struct Packet {
-  String nodeID;
+  uint8_t nodeID;
   uint16_t packetID;
   uint32_t timestamp;
   float payload;
-  String error; };
+  int error;
+  uint8_t authID;
+};
                                                                  
 volatile bool canReadTemp = false;
 float tempBuffer[WINDOW_SIZE];  // Circular buffer to hold temperature values
