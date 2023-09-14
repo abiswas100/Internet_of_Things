@@ -1,4 +1,4 @@
-//SLAVE NODE =3 
+//SLAVE NODE = 2
 
 #define CPU_HZ 48000000
 #define TIMER_PRESCALER_DIV 1024
@@ -25,10 +25,14 @@ struct Packet {
   uint16_t packetID;
   uint32_t timestamp;
   float payload;
+  uint8_t authID;
   char error[16]={'0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'}; 
 };
                                                                  
 volatile bool canReadTemp = false;
+volatile bool Node1asked = false;
+
+
 float tempBuffer[WINDOW_SIZE];  // Circular buffer to hold temperature values
 int tempIndex = 0;  // Index to keep track of the oldest temperature value
 float tempSum = 0;  // Sum of temperatures in the buffer
@@ -76,7 +80,8 @@ uint16_t packetCounter = 0;  // Initialize packet counter
 
 // long timeSinceLastPacket = 0; 
 
-void setup() {
+void setup() 
+{
      GCLK->GENDIV.reg = GCLK_GENDIV_ID(2) | GCLK_GENDIV_DIV(4);
      GCLK->GENCTRL.reg = GCLK_GENCTRL_ID(2) |
      GCLK_GENCTRL_GENEN |
@@ -101,7 +106,7 @@ void setup() {
      if (rf95.init() == false) {
         SerialUSB.println("Radio Init Failed - Freezing");
         while (1);
-}
+        }
      else {
         //An LED inidicator to let us know radio initialization has completed.
         // rf95.setModemConfig(Bw125Cr48Sf4096); // slow and reliable?
@@ -125,32 +130,13 @@ void setup() {
 void loop() 
 {    
     Readtemp();
-    if (newAvgAvailable) {
-      // Print and send the average temperature
-      SerialUSB.print("Average Temperature over last 5 seconds is: ");
-      SerialUSB.println(avgTemperature);
 
-      // Create the packet
-      Packet packet;
-      packet.nodeID = 3;  // Node 1
-      packet.packetID = packetCounter++;
-      packet.timestamp = millis();  // Current time in milliseconds
-      packet.payload = avgTemperature;
-      strcpy(packet.error,error_bits);//----------------------------------------------------------changed
-
-      // Serialize the packet into a byte array
-      uint8_t toSend[sizeof(Packet)];
-      memcpy(toSend, &packet, sizeof(Packet));
-
-      // Print and send the message
-      SerialUSB.print("Sending packet with ID: ");
-      SerialUSB.println(packet.packetID);
-      rf95.send(toSend, sizeof(Packet));
-
-      // Reset the flag
-      newAvgAvailable = false;
-    }  
-    if (rf95.available()){
+     // if (newAvgAvailable) {
+     //   // Reset the flag
+     //   newAvgAvailable = false;
+  
+    if (rf95.available())
+    {
         // Should be a message for us now
         uint8_t buf[RH_RF95_MAX_MESSAGE_LEN];
         uint8_t len = sizeof(buf);
@@ -161,35 +147,61 @@ void loop()
             buf[len] = '\0';  // Null-terminate the received string
             digitalWrite(LED, HIGH); //Turn on status LED
             timeSinceLastPacket = millis(); //Timestamp this packet
-            
-            // SerialUSB.print("Got message: ");
-            // SerialUSB.print((char*)buf);
-            // SerialUSB.print(" RSSI: ");
-            // SerialUSB.print(rf95.lastRssi(), DEC);
-            // SerialUSB.println();
 
-                        // Print the received packet details
+            // Print the received packet details
             SerialUSB.print("Got message from Node ID: ");
             SerialUSB.print(receivedPacket->nodeID);
-            // SerialUSB.print(", Packet ID: ");
-            // SerialUSB.print(receivedPacket->packetID);
-            // SerialUSB.print(", Timestamp: ");
-            // SerialUSB.print(receivedPacket->timestamp);
-            SerialUSB.print(", Payload (Temperature): ");
-            SerialUSB.print(receivedPacket->payload);
-        //     SerialUSB.print(" RSSI: ");
-        //     SerialUSB.print(rf95.lastRssi(), DEC);
-            SerialUSB.println();
-            // print_errors(receivedPacket->error);
-            //int int_error = receivedPacket->error.toInt();                            // convert the received error in String to integer 
-              //  write_error(receivedPacket->nodeID, int_error) ;                       //Write the received packet error in the correct node memory allocation in the server 
-      
-               current_packet_id = receivedPacket->packetID;                 //Assign the current packet ID to the current_packet_id variable 
-               
-                     if(current_packet_id-previouse_packet_id > 1)            //check the missing packet 
-                    //  write_error(receivedPacket->nodeID, 19) ; 
-                     previouse_packet_id = current_packet_id;                    //save the error in the flash memory  
-         }                                                            //Received message saving
+
+            // Check if this is the Master Node if so then send the Packet
+            if(receivedPacket->nodeID == 1 && receivedPacket->authID == 2)
+            {
+              if (Node1asked == false)
+              {
+                Node1asked = true;
+                //Print and send the average temperature
+                SerialUSB.print("Average Temperature over last 5 seconds is: ");
+                SerialUSB.println(avgTemperature);
+
+                // Create the packet
+                Packet packet;
+                packet.nodeID = 2;  // Node 1
+                packet.packetID = packetCounter++;
+                packet.timestamp = millis();  // Current time in milliseconds
+                packet.payload = avgTemperature;
+                strcpy(packet.error,error_bits);//----------------------------------------------------------changed
+
+                // Serialize the packet into a byte array
+                uint8_t toSend[sizeof(Packet)];
+                memcpy(toSend, &packet, sizeof(Packet));
+
+                // Print and send the message
+                SerialUSB.print("Node 2 Sending packet with ID: ");
+                SerialUSB.println(packet.packetID);
+
+                rf95.send(toSend, sizeof(Packet));
+              } 
+            }
+
+            else
+            {
+              Node1asked = false;
+              SerialUSB.print(", Packet ID: ");
+              SerialUSB.print(receivedPacket->packetID);
+              SerialUSB.print(", Timestamp: ");
+              SerialUSB.print(receivedPacket->timestamp);
+              SerialUSB.print(", Payload (Temperature): ");
+              SerialUSB.print(receivedPacket->payload);
+              SerialUSB.print(" RSSI: ");
+              SerialUSB.print(rf95.lastRssi(), DEC);
+              SerialUSB.println();
+              delay(500);
+              current_packet_id = receivedPacket->packetID;    //Assign the current packet ID to the current_packet_id variable 
+                
+              if(current_packet_id-previouse_packet_id > 1)            //check the missing packet 
+              //write_error(receivedPacket->nodeID, 19) ; 
+              previouse_packet_id = current_packet_id;                    //save the error in the flash memory  
+            } 
+          }
          else
          {
          SerialUSB.println("Recieve failed");
@@ -233,17 +245,19 @@ void setTimerFrequencyTC4(TcCount16* TC, int frequencyHz) {
   while (TC->STATUS.bit.SYNCBUSY == 1);
 }
 
-void TC4_Handler() {
-  static bool isLEDOn = false;
-  TcCount16* TC = (TcCount16*)TC4;
-  if (TC->INTFLAG.bit.MC0 == 1) {
-    TC->INTFLAG.bit.MC0 = 1;
-    WDT->CLEAR.reg = WDT_CLEAR_CLEAR_KEY; 
-//    digitalWrite(PIN_LED_13, isLEDOn);
-//    SerialUSB.println(isLEDOn ? "Blue LED is on" : "Blue LED is off");
-//    isLEDOn = !isLEDOn;
-    canReadTemp = true;
-  }
+void TC4_Handler() 
+{
+    static bool isLEDOn = false;
+    TcCount16* TC = (TcCount16*)TC4;
+    if (TC->INTFLAG.bit.MC0 == 1) 
+    {
+        TC->INTFLAG.bit.MC0 = 1;
+        WDT->CLEAR.reg = WDT_CLEAR_CLEAR_KEY; 
+    //    digitalWrite(PIN_LED_13, isLEDOn);
+    //    SerialUSB.println(isLEDOn ? "Blue LED is on" : "Blue LED is off");
+    //    isLEDOn = !isLEDOn;
+        canReadTemp = true;
+    }
 }
 
 float Readtemp() {
@@ -295,112 +309,20 @@ void reset_reason(){
 }
 
 void WDT_Handler() {
- //SerialUSB.println("WDT Interrupt");
- uint8_t reg_statusA = REG_DSU_STATUSA;
- uint8_t reg_statusB = REG_DSU_STATUSB;
- uint16_t status_errors = 0x0000;
- status_errors = reg_statusA;
- status_errors = status_errors << 8;
- status_errors |= reg_statusB;
- 
-if(bitRead(status_errors, 12)) {error_bits[3]=1;}
-if(bitRead(status_errors, 11)) {error_bits[4]=1;}
-if(bitRead(status_errors, 10)) {error_bits[5]=1;}
-if(bitRead(status_errors, 9)) {error_bits[6]=1;}
-if(bitRead(status_errors, 4)) {error_bits[7]=1;}
-if(bitRead(status_errors, 3)) {error_bits[8]=1;}
-if(bitRead(status_errors, 2)) {error_bits[9]=1;}
-if(bitRead(status_errors, 1)) {error_bits[10]=1;}
-
-
-//  bitWrite(error_bits, 3, bitRead(status_errors, 12));
-//  bitWrite(error_bits, 4, bitRead(status_errors, 11));
-//  bitWrite(error_bits, 5, bitRead(status_errors, 10));
-//  bitWrite(error_bits, 6, bitRead(status_errors, 9));
-//  bitWrite(error_bits, 7, bitRead(status_errors, 4));
-//  bitWrite(error_bits, 8, bitRead(status_errors, 3));
-//  bitWrite(error_bits, 9, bitRead(status_errors, 2));
-//  bitWrite(error_bits, 10, bitRead(status_errors, 1));
-
-}
-
-
-// void write_error(String Node_name, String ecode)
-// {
-//   if(Node_name=="Amlan")
-//   {error_Amlan.write(ecode);}
-
-//    if(Node_name=="Shaswati")
-//   {error_Shaswati.write(ecode);}
-
-//     if(Node_name=="Anuruddha")
-//   {error_Anuruddha.write(ecode);}
-
-//     if(Node_name=="Avhishek")
-//   {error_Avhishek.write(ecode);}
+    //SerialUSB.println("WDT Interrupt");
+    uint8_t reg_statusA = REG_DSU_STATUSA;
+    uint8_t reg_statusB = REG_DSU_STATUSB;
+    uint16_t status_errors = 0x0000;
+    status_errors = reg_statusA;
+    status_errors = status_errors << 8;
+    status_errors |= reg_statusB;
     
-//     if(Node_name=="PKTError")
-//   {error_receive.write(ecode);}
-
-// }
-
-// void print_errors(String err){
-
-//   SerialUSB.println("Error");
-//   // SerialUSB.println(err);
-//   // SerialUSB.println(err.charAt(1));
-
-//  if (err.charAt(13) == '1') {
-//  SerialUSB.println("System Reset");
-//  }
- 
-//  if (err.charAt(12) == '1') {
-//  SerialUSB.println("Watchdog Reset");
-//  }
-//  if (err.charAt(11) == '1') {
-//  SerialUSB.println("External Reset");
-//  }
-//  if (err.charAt(10) == '1') {
-//  SerialUSB.println("Command not allowed error: PROTECTED STATE");
-//  }
-//  if (err.charAt(9) == '1') {
-//  SerialUSB.println("DSU Operation Failure Error");
-//  }
-//  if (err.charAt(8) == '1') {
-//  SerialUSB.println("BUS ERROR Detected!");
-//  }
-//  if (err.charAt(7) == '1') {
-//  SerialUSB.println("COLD PLUGGING ERROR!!");
-//  }
-//  if (err.charAt(6) == '1') {
-//  SerialUSB.println("HOT PLUGGING ERROR!");
-//  }
-//  if (err.charAt(5) == '1') {
-//  SerialUSB.println("DCC1 Written Error");
-//  }
-//  if (err.charAt(4) == '1') {
-//  SerialUSB.println("DCC0 Written Error");
-//  }
-//  if (err.charAt(3) == '1') {
-//  SerialUSB.println("Debugger Probe Error");
-//  }
-//  if (err.charAt(2) == '1') {
-//  SerialUSB.println("Missing Packet Error!");
-//  }
-//  if (err.charAt(1) == '1') {
-//  SerialUSB.println("Packet Receival Error");
-//  }
-// // if (err.charAt(0) == '1') {
-// // SerialUSB.println("Packet Receival Error");
-// // }
- 
-  
-// }
-
-// //
-// //if (ierror > 0){
-// // SerialUSB.print("Node ");
-// // SerialUSB.print(packet[0]);
-// // SerialUSB.println(" had the following error(s):");
-// // for (uint8_t i = 0; i < 16; i++){
-// // if bitRead(ierror, i){
+    if(bitRead(status_errors, 12)) {error_bits[3]=1;}
+    if(bitRead(status_errors, 11)) {error_bits[4]=1;}
+    if(bitRead(status_errors, 10)) {error_bits[5]=1;}
+    if(bitRead(status_errors, 9)) {error_bits[6]=1;}
+    if(bitRead(status_errors, 4)) {error_bits[7]=1;}
+    if(bitRead(status_errors, 3)) {error_bits[8]=1;}
+    if(bitRead(status_errors, 2)) {error_bits[9]=1;}
+    if(bitRead(status_errors, 1)) {error_bits[10]=1;}
+}
