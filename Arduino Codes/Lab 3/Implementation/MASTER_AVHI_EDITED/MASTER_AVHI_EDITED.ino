@@ -39,6 +39,11 @@ volatile bool Slave3 = false;
 volatile bool Slave4 = false;
 volatile bool Master = false;
 
+float node1_temperature = 0;
+float node2_temperature = 0;
+float node3_temperature = 0;
+float node4_temperature = 0;
+
 
 float tempBuffer[WINDOW_SIZE];  // Circular buffer to hold temperature values
 int tempIndex = 0;  // Index to keep track of the oldest temperature value
@@ -160,11 +165,9 @@ void loop()
             digitalWrite(LED, HIGH); //Turn on status LED
             timeSinceLastPacket = millis(); //Timestamp this packet
             
-            // SerialUSB.print("Got message: ");
-            // SerialUSB.print((char*)buf);
-            // SerialUSB.print(" RSSI: ");
-            // SerialUSB.print(rf95.lastRssi(), DEC);
-            // SerialUSB.println();
+            //SAVE THE TEMPERATURE OF NODE 2
+            node2_temperature = receivedPacket->payload;
+            node1_temperature = avgTemperature;
 
             // Print the received packet details
             SerialUSB.print("Got message from Node ID: ");
@@ -175,8 +178,7 @@ void loop()
             SerialUSB.print(receivedPacket->timestamp);
             SerialUSB.print(", Payload (Temperature): ");
             SerialUSB.print(receivedPacket->payload);
-        //     SerialUSB.print(" RSSI: ");
-        //     SerialUSB.print(rf95.lastRssi(), DEC);
+
             SerialUSB.println();
             print_errors(receivedPacket->error);
             //FLASH STORAGE DETAILS PRINT
@@ -186,6 +188,20 @@ void loop()
             SerialUSB.print(", ANURUDDHA: ");SerialUSB.print(error_Anuruddha.read());
             SerialUSB.print(", AVHISHEK: ");SerialUSB.print(error_Avhishek.read());
             SerialUSB.print(", ERROR RECEIVE ");SerialUSB.println(error_receive.read());
+
+            SerialUSB.println();
+            SerialUSB.println();
+            
+            SerialUSB.println("PRINTING EVERYONE'S TEMPERATURE");
+            SerialUSB.print("(Avhi, "); SerialUSB.print(node1_temperature, 2); 
+            SerialUSB.print("), (Amlan, "); SerialUSB.print(node2_temperature, 2); 
+            SerialUSB.print("), (Shaswati, "); SerialUSB.print(node3_temperature, 2); 
+            SerialUSB.print("), (Anu, "); SerialUSB.print(node4_temperature, 2); 
+            SerialUSB.println(")");
+            
+            SerialUSB.println();
+            SerialUSB.println();
+
 
             write_error(receivedPacket->nodeID, receivedPacket->error) ;                       //Write the received packet error in the correct node memory allocation in the server------changed 
       
@@ -247,12 +263,10 @@ void loop()
             buf[len] = '\0';  // Null-terminate the received string
             digitalWrite(LED, HIGH); //Turn on status LED
             timeSinceLastPacket = millis(); //Timestamp this packet
-            
-            // SerialUSB.print("Got message: ");
-            // SerialUSB.print((char*)buf);
-            // SerialUSB.print(" RSSI: ");
-            // SerialUSB.print(rf95.lastRssi(), DEC);
-            // SerialUSB.println();
+
+            //SAVE THE TEMPERATURE OF NODE 2
+            node3_temperature = receivedPacket->payload;
+            node1_temperature = avgTemperature;
 
             // Print the received packet details
             SerialUSB.print("Got message from Node ID: ");
@@ -274,6 +288,20 @@ void loop()
             SerialUSB.print(", ANURUDDHA: ");SerialUSB.print(error_Anuruddha.read());
             SerialUSB.print(", AVHISHEK: ");SerialUSB.print(error_Avhishek.read());
             SerialUSB.print(", ERROR RECEIVE ");SerialUSB.println(error_receive.read());
+
+            
+            SerialUSB.println();
+            SerialUSB.println();
+            
+            SerialUSB.println("PRINTING EVERYONE'S TEMPERATURE");
+            SerialUSB.print("(Avhi, "); SerialUSB.print(node1_temperature, 2); 
+            SerialUSB.print("), (Amlan, "); SerialUSB.print(node2_temperature, 2); 
+            SerialUSB.print("), (Shaswati, "); SerialUSB.print(node3_temperature, 2); 
+            SerialUSB.print("), (Anu, "); SerialUSB.print(node4_temperature, 2); 
+            SerialUSB.println(")");
+            
+            SerialUSB.println();
+            SerialUSB.println();
 
             write_error(receivedPacket->nodeID, receivedPacket->error) ;                       //Write the received packet error in the correct node memory allocation in the server------changed 
       
@@ -336,12 +364,10 @@ void loop()
             buf[len] = '\0';  // Null-terminate the received string
             digitalWrite(LED, HIGH); //Turn on status LED
             timeSinceLastPacket = millis(); //Timestamp this packet
-            
-            // SerialUSB.print("Got message: ");
-            // SerialUSB.print((char*)buf);
-            // SerialUSB.print(" RSSI: ");
-            // SerialUSB.print(rf95.lastRssi(), DEC);
-            // SerialUSB.println();
+
+            //SAVE THE TEMPERATURE OF NODE 2
+            node4_temperature = receivedPacket->payload;
+            node1_temperature = avgTemperature;
 
             // Print the received packet details
             SerialUSB.print("Got message from Node ID: ");
@@ -363,6 +389,21 @@ void loop()
             SerialUSB.print(", ANURUDDHA: ");SerialUSB.print(error_Anuruddha.read());
             SerialUSB.print(", AVHISHEK: ");SerialUSB.print(error_Avhishek.read());
             SerialUSB.print(", ERROR RECEIVE ");SerialUSB.println(error_receive.read());
+
+
+            SerialUSB.println();
+            SerialUSB.println();
+            
+            SerialUSB.println("PRINTING EVERYONE'S TEMPERATURE");
+            SerialUSB.print("(Avhi, "); SerialUSB.print(node1_temperature, 2); 
+            SerialUSB.print("), (Amlan, "); SerialUSB.print(node2_temperature, 2); 
+            SerialUSB.print("), (Shaswati, "); SerialUSB.print(node3_temperature, 2); 
+            SerialUSB.print("), (Anu, "); SerialUSB.print(node4_temperature, 2); 
+            SerialUSB.println(")");
+            
+            SerialUSB.println();
+            SerialUSB.println();
+
 
             write_error(receivedPacket->nodeID, receivedPacket->error) ;                       //Write the received packet error in the correct node memory allocation in the server------changed 
       
@@ -388,11 +429,14 @@ void loop()
   else if(reportCount == 4 && Master == false)
   {  // set the slaves false for the next 5 secs
       Slave2 = false;
-      // Slave3 = false;
-      // Slave4 = false;
+      Slave3 = false;
+      Slave4 = false;
       Master = true;
       // Send the authentication packet
       SerialUSB.println("Sending Master's Average Temperature. ");
+
+      //SAVE THE TEMPERATURE OF NODE 2
+      node1_temperature = avgTemperature;
 
       // Create the packet
       Packet packet;
@@ -413,6 +457,21 @@ void loop()
       SerialUSB.println();
       SerialUSB.println();
       rf95.send(toSend, sizeof(Packet));
+
+      SerialUSB.println();
+      SerialUSB.println();
+      
+      SerialUSB.println("PRINTING EVERYONE'S TEMPERATURE");
+      SerialUSB.print("(Avhi, "); SerialUSB.print(node1_temperature, 2); 
+      SerialUSB.print("), (Amlan, "); SerialUSB.print(node2_temperature, 2); 
+      SerialUSB.print("), (Shaswati, "); SerialUSB.print(node3_temperature, 2); 
+      SerialUSB.print("), (Anu, "); SerialUSB.print(node4_temperature, 2); 
+      SerialUSB.println(")");
+      
+      SerialUSB.println();
+      SerialUSB.println();
+
+      
   }      
 }
 
