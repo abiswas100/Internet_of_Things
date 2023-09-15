@@ -325,114 +325,114 @@ void loop()
      timeSinceLastPacket = millis();
   }
 
-  // // for Node = slave 4
-  // else if(reportCount == 3 && Slave4 == false)
-  //   {   Slave4 = true; Master = false;
-  //     // Send the authentication packet
-  //     SerialUSB.println("Asking Node 4 to send it's temp. ");
+  // for Node = slave 4
+  else if(reportCount == 3 && Slave4 == false)
+    {   Slave4 = true; Master = false;
+      // Send the authentication packet
+      SerialUSB.println("Asking Node 4 to send it's temp. ");
 
-  //     // Create the packet
-  //     Packet packet;
-  //     packet.nodeID = 1;  // Node 1
-  //     packet.packetID = packetCounter++;
-  //     packet.timestamp = millis();  // Current time in milliseconds
-  //     packet.payload = avgTemperature;
-  //     // packet.error = 0;
-  //     packet.authID = 4;
+      // Create the packet
+      Packet packet;
+      packet.nodeID = 1;  // Node 1
+      packet.packetID = packetCounter++;
+      packet.timestamp = millis();  // Current time in milliseconds
+      packet.payload = avgTemperature;
+      // packet.error = 0;
+      packet.authID = 4;
 
-  //     // Serialize the packet into a byte array
-  //     uint8_t toSend[sizeof(Packet)];
-  //     memcpy(toSend, &packet, sizeof(Packet));
+      // Serialize the packet into a byte array
+      uint8_t toSend[sizeof(Packet)];
+      memcpy(toSend, &packet, sizeof(Packet));
 
-  //     // Print and send the message
-  //     SerialUSB.print("Sending authentication packet to Node 4 : Packet Number : ");
-  //     SerialUSB.println(packet.packetID);
-  //     rf95.send(toSend, sizeof(Packet));
+      // Print and send the message
+      SerialUSB.print("Sending authentication packet to Node 4 : Packet Number : ");
+      SerialUSB.println(packet.packetID);
+      rf95.send(toSend, sizeof(Packet));
 
       
-  //     // Recieve the data packet from Node 4
-  //     // SerialUSB.println(rf95.available());
-  //     while(rf95.available() == 0){}
-  //     // SerialUSB.println(rf95.available());
+      // Recieve the data packet from Node 4
+      // SerialUSB.println(rf95.available());
+      while(rf95.available() == 0){}
+      // SerialUSB.println(rf95.available());
       
-  //     if (rf95.available()){
-  //       // Should be a message for us now
-  //       uint8_t buf[RH_RF95_MAX_MESSAGE_LEN];
-  //       uint8_t len = sizeof(buf);
-  //       if (rf95.recv(buf, &len))
-  //       {
-  //           // Cast the received buffer to the Packet struct type
-  //           Packet *receivedPacket = (Packet *)buf;
-  //           buf[len] = '\0';  // Null-terminate the received string
-  //           digitalWrite(LED, HIGH); //Turn on status LED
-  //           timeSinceLastPacket = millis(); //Timestamp this packet
+      if (rf95.available()){
+        // Should be a message for us now
+        uint8_t buf[RH_RF95_MAX_MESSAGE_LEN];
+        uint8_t len = sizeof(buf);
+        if (rf95.recv(buf, &len))
+        {
+            // Cast the received buffer to the Packet struct type
+            Packet *receivedPacket = (Packet *)buf;
+            buf[len] = '\0';  // Null-terminate the received string
+            digitalWrite(LED, HIGH); //Turn on status LED
+            timeSinceLastPacket = millis(); //Timestamp this packet
 
-  //           //SAVE THE TEMPERATURE OF NODE 2
-  //           node4_temperature = receivedPacket->payload;
-  //           node1_temperature = avgTemperature;
+            //SAVE THE TEMPERATURE OF NODE 2
+            node4_temperature = receivedPacket->payload;
+            node1_temperature = avgTemperature;
 
-  //           // Print the received packet details
-  //           SerialUSB.print("Got message from Node ID: ");
-  //           SerialUSB.print(receivedPacket->nodeID);
-  //           SerialUSB.print(", Packet ID: ");
-  //           SerialUSB.print(receivedPacket->packetID);
-  //           SerialUSB.print(", Timestamp: ");
-  //           SerialUSB.print(receivedPacket->timestamp);
-  //           SerialUSB.print(", Payload (Temperature): ");
-  //           SerialUSB.print(receivedPacket->payload);
-  //       //     SerialUSB.print(" RSSI: ");
-  //       //     SerialUSB.print(rf95.lastRssi(), DEC);
-  //           SerialUSB.println();
-  //            print_errors(receivedPacket->error);
-  //           //FLASH STORAGE DETAILS PRINT
-  //           SerialUSB.println("FLASH STORAGE RESULTS");
-  //           SerialUSB.print("AMLAN: ");SerialUSB.print(error_Amlan.read());
-  //           SerialUSB.print(", SHASWATI: ");SerialUSB.print(error_Shaswati.read());
-  //           SerialUSB.print(", ANURUDDHA: ");SerialUSB.print(error_Anuruddha.read());
-  //           SerialUSB.print(", AVHISHEK: ");SerialUSB.print(error_Avhishek.read());
-  //           SerialUSB.print(", ERROR RECEIVE ");SerialUSB.println(error_receive.read());
+            // Print the received packet details
+            SerialUSB.print("Got message from Node ID: ");
+            SerialUSB.print(receivedPacket->nodeID);
+            SerialUSB.print(", Packet ID: ");
+            SerialUSB.print(receivedPacket->packetID);
+            SerialUSB.print(", Timestamp: ");
+            SerialUSB.print(receivedPacket->timestamp);
+            SerialUSB.print(", Payload (Temperature): ");
+            SerialUSB.print(receivedPacket->payload);
+        //     SerialUSB.print(" RSSI: ");
+        //     SerialUSB.print(rf95.lastRssi(), DEC);
+            SerialUSB.println();
+             print_errors(receivedPacket->error);
+            //FLASH STORAGE DETAILS PRINT
+            SerialUSB.println("FLASH STORAGE RESULTS");
+            SerialUSB.print("AMLAN: ");SerialUSB.print(error_Amlan.read());
+            SerialUSB.print(", SHASWATI: ");SerialUSB.print(error_Shaswati.read());
+            SerialUSB.print(", ANURUDDHA: ");SerialUSB.print(error_Anuruddha.read());
+            SerialUSB.print(", AVHISHEK: ");SerialUSB.print(error_Avhishek.read());
+            SerialUSB.print(", ERROR RECEIVE ");SerialUSB.println(error_receive.read());
 
 
-  //           SerialUSB.println();
-  //           SerialUSB.println();
+            SerialUSB.println();
+            SerialUSB.println();
             
-  //           SerialUSB.println("PRINTING EVERYONE'S TEMPERATURE");
-  //           SerialUSB.print("(Avhi, "); SerialUSB.print(node1_temperature, 2); 
-  //           SerialUSB.print("), (Amlan, "); SerialUSB.print(node2_temperature, 2); 
-  //           SerialUSB.print("), (Shaswati, "); SerialUSB.print(node3_temperature, 2); 
-  //           SerialUSB.print("), (Anu, "); SerialUSB.print(node4_temperature, 2); 
-  //           SerialUSB.println(")");
+            SerialUSB.println("PRINTING EVERYONE'S TEMPERATURE");
+            SerialUSB.print("(Avhi, "); SerialUSB.print(node1_temperature, 2); 
+            SerialUSB.print("), (Amlan, "); SerialUSB.print(node2_temperature, 2); 
+            SerialUSB.print("), (Shaswati, "); SerialUSB.print(node3_temperature, 2); 
+            SerialUSB.print("), (Anu, "); SerialUSB.print(node4_temperature, 2); 
+            SerialUSB.println(")");
             
-  //           SerialUSB.println();
-  //           SerialUSB.println();
+            SerialUSB.println();
+            SerialUSB.println();
 
 
-  //           write_error(receivedPacket->nodeID, receivedPacket->error) ;                       //Write the received packet error in the correct node memory allocation in the server------changed 
+            write_error(receivedPacket->nodeID, receivedPacket->error) ;                       //Write the received packet error in the correct node memory allocation in the server------changed 
       
-  //              current_packet_id = receivedPacket->packetID;                 //Assign the current packet ID to the current_packet_id variable 
+               current_packet_id = receivedPacket->packetID;                 //Assign the current packet ID to the current_packet_id variable 
                
-  //                    if(current_packet_id-previouse_packet_id > 1) {
-  //                      receivedPacket->error[11]='1';
-  //                    }           //check the missing packet 
-  //                   //  write_error(receivedPacket->nodeID, 19) ; 
-  //                    previouse_packet_id = current_packet_id;
-  //        } 
-  //        else
-  //        {
-  //        SerialUSB.println("Recieve failed");
-  //        char temp1[]={'0','0','0','0','0','0','0','0','0','0','0','0','1','0','0','0'};
-  //        write_error(5, temp1);                               // Save the error code as message receive failed 
-  //        }           
-  //    }
-  //    timeSinceLastPacket = millis();
-  // }
+                     if(current_packet_id-previouse_packet_id > 1) {
+                       receivedPacket->error[11]='1';
+                     }           //check the missing packet 
+                    //  write_error(receivedPacket->nodeID, 19) ; 
+                     previouse_packet_id = current_packet_id;
+         } 
+         else
+         {
+         SerialUSB.println("Recieve failed");
+         char temp1[]={'0','0','0','0','0','0','0','0','0','0','0','0','1','0','0','0'};
+         write_error(5, temp1);                               // Save the error code as message receive failed 
+         }           
+     }
+     timeSinceLastPacket = millis();
+  }
 
   // Master sends it average temperature
   else if(reportCount == 4 && Master == false)
   {  // set the slaves false for the next 5 secs
       Slave2 = false;
       Slave3 = false;
-      // Slave4 = false;
+      Slave4 = false;
       Master = true;
       // Send the authentication packet
       SerialUSB.println("Sending Master's Average Temperature. ");
