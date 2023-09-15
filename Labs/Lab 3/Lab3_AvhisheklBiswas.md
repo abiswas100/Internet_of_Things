@@ -178,6 +178,38 @@ flag0 | seconds counting flag mismatch |
 ---
 ### 2. Development Process:
 
+#### a. Method of Problem Solving:
+1. We choose the Polling method as our way to implement the communication between nodes.
+2. Therefore, we add another information called `authID` which equals to `2` for `Child Node 2`. `3` for `Child Node 3`,`4` for `Child Node 4`.
+   
+3. At the Master Node:
+  1. We use the `reportCount` which is a timer controlled variable to talk to each Child Node at a perticular second. The value of this variable increases from 0 to 4 for each second counted by the timer.
+  2. As the `reportCount` value becomes 2, we create a packet and send it to Node 2 with `authID = 2` using `rf95.send(toSend, sizeof(Packet));`
+  3. Then we switch to recieving mode using `rf95.available()`.
+  4. We then wait for the transmission to complete using a while loop. 
+  5. As the Master Node recieves a packet from the perticular Node, it processes the packet, and saves the payload and the error values, which if present is added to the flash storage.  
+  6. This process is repeated for every child Node 3 and 4 respectively.
+  7. After every transmission for each Node we print the payload values for each Node that is recorded and the errors if present and the FLash storage content.
+  8. We also introduce Nodeflag variables, which are basically used so that in the same second the Master does not send multiple packets to a child Node requesting it's payload.
+   
+4. At the Child Nodes:
+   1. These Node start their functioning by listening into the channel.
+   2. As soon as they receive a packet, they open it and check for the `Node ID` and the `Auth ID`. 
+      1. If the `Node ID = 1` and the `Auth ID = ChildNode_ID` then it is a request from the Master Node for the child Nodes packet. 
+      2. And the child Node transmits it's packet with the payload and errors if any.
+      3. If it is not the Master Node, the child Node with open the packet and record the `Node ID` and the `payload` which will stored in other Nodes temperature variable.
+      4. After every received Node the child Nodes print the latest contents of each Nodes in the SerialUSB.  
+
+
+#### b. Run-time Errors
+| Error Code       | Error |
+|--------------|--------|
+mem0 |  memory overflow|
+timer | timer counting error |
+flag0 | seconds counting flag mismatch | 
+WDT   | Watchdog timer error due to reset |
+packet | no recieved packet from the child Node |
+infiniteloop | when no packet is received the Master is stuck in an infinite loop |
 
 #### Subtask 1: 
 **Packet Structure** -  Along with our 4 given information, we decided to add an authID space in the packet that will help in the child nodes to identify who needs to transmit. We define this packet as a C++ structure and initialize them.
