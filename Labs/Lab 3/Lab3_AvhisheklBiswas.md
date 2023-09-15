@@ -145,12 +145,243 @@ float Readtemp() {
 ---
 ---
 
-  
+  ## Task 3 : Error Logging
+
+### Requirements
+1.   System reset
+    1. Implement a WDT and enable the WDT interrupt as we learnt in lab 1 and lab 2
+
+2. Communication error
+   1. Packet reception failure: see example code
+   2. Missing packet
+   
+3. Error log structure
+   1. Timestamp
+   2. Error code
+   
+4.  Store only the error code in the flash storage
+
+---
+
+#### Development Plan:
+
+#### a. Procedure of Solving the Problem
+1.	WDT is implemented for every 2s and is kicked in `TC4_handler()`
+2.	When WDT interrupt occurs, `DSU_STATUSA` and `DSU_STATUSB` register data are collected.
+3.	Error codes from `RCAUSE_REG, REG_DSU_STATUSA and REG_DSU_STATUS` is added to the transmission packet from every slave node to the master node. The master node will save those error codes in the flash storage. 
+4.	Communication error logging code is like example code, but packet IDs (current and previous id) are tracked for each transmission and reception.
+5.	In the serial monitor status of the flash storage are printed with the time stamp.
+
+
+
+#### b. Configuration Table
+#### Bit Number and Associated Error Information
+
+| Bit Number | Concerned Register | Error Information |
+|------------|--------------------|-------------------|
+| 0          | RCAUSE             | System Reset      |
+| 1          |       RCAUSE             | External Reset    |
+| 2          |             RCAUSE       | Watchdog Reset    |
+| 3          | STATUS A           | This bit is set when a command that is not allowed in protected state is issued. |
+| 4          | STATUS A                   | This bit is set when a DSU operation failure is detected. |
+| 5          |STATUS A                    | This bit is set when a bus error is detected. |
+| 6          | STATUS A                   | This bit is set when a debug adapter Cold-Plugging is detected, which extends the CPU reset phase. |
+| 7          | STATUS B           | This value is set when Hot-Plugging is enabled. |
+| 8          |    STATUS B                | This bit is set when DCC1 is written. This bit is cleared when DCC1 is read. |
+| 9          |         STATUS B           | This bit is set when DCC0 is written. This bit is cleared when DCC0 is read. |
+| 10         |  STATUS B                  | This bit is set when a debugger probe is detected. |
+| 11         | STATUS B                   | Missing Packet Error |
+| 12         | STATUS B                   | Packet Receive Error |
+
+
+
+#### b. Run-time Errors
+
+
+
+---
+### 2. Development Process:
+1.	For task 3, we used code from LAB1 for setting up the WDT but to set up the early warning interrupt we are using WDT_Handler that we got from the Arduino Zero website. 
+2.	For transmitting error codes, we used a 16 cells char array with each cell used store a flag for a particular error. 
+3.	Then, this char array was passed on to master node where we traverse this error code using if-else constraints to display the right error message. The following table shows the cell number and the respective error causes. 
+
+### 3. Test Plan:
+
+1.	Test of packets: The packets were printed to serial monitor in all the nodes to check whether all the error logging messages were contained on the packet. 
+2.	Test our code with system reset, WDT reset and external reset. 
+3.	Print all the packets gathered by leader node to check if all the communications are happening correctly
+4.	Write all the error codes to flash storage 
+ 
+#### Component Test Results and Comments
+
+| Component      | Test                  | Results | Comments                                              |
+|----------------|-----------------------|---------|-------------------------------------------------------|
+| communication  | Missing packet        | Pass    | No errors due to good collision avoidance in code     |
+|                | Packet reception failure | Pass  | No errors due to good collision avoidance in code     |
+| WDT            | Resetting             | -       | Could not test                                        |
+| STATUSA        | -                     | -       | Could not test                                        |
+| STATUSB        | -                     | -       | Could not test                                        |
+
+#### Code solutions:
+1. **System reset** : The below code checks the reason of reset from the `RCAUSE` register. The `WDT_Handler` checks the `REG_DSU_STATUSA` and the `REG_DSU_STATUSB`. The Watchdog is there to track the failure from the nodes, below code is from one of the codes. 
+   
+  ###### Code
+  ```arduino
+  void reset_reason(){
+ //determine last reset type
+ uint8_t reset_reg = PM->RCAUSE.reg;
+ SerialUSB.println(bitRead(reset_reg, 6)); 
+ if(bitRead(reset_reg, 6)) {error_bits[0]=1;}//--------------------------------------------changed
+ if(bitRead(reset_reg, 5)) {error_bits[1]=1;}
+ if(bitRead(reset_reg, 4)) {error_bits[2]=1;}
+//  bitWrite(error_bits, 0, bitRead(reset_reg, 6));
+//  bitWrite(error_bits, 1, bitRead(reset_reg, 5));
+//  bitWrite(error_bits, 2, bitRead(reset_reg, 4));
+//   bitWrite(error_bits, 13, 1);
+}
+
+void WDT_Handler() {
+    //SerialUSB.println("WDT Interrupt");
+    uint8_t reg_statusA = REG_DSU_STATUSA;
+    uint8_t reg_statusB = REG_DSU_STATUSB;
+    uint16_t status_errors = 0x0000;
+    status_errors = reg_statusA;
+    status_errors = status_errors << 8;
+    status_errors |= reg_statusB;
+    
+    if(bitRead(status_errors, 12)) {error_bits[3]=1;}
+    if(bitRead(status_errors, 11)) {error_bits[4]=1;}
+    if(bitRead(status_errors, 10)) {error_bits[5]=1;}
+    if(bitRead(status_errors, 9)) {error_bits[6]=1;}
+    if(bitRead(status_errors, 4)) {error_bits[7]=1;}
+    if(bitRead(status_errors, 3)) {error_bits[8]=1;}
+    if(bitRead(status_errors, 2)) {error_bits[9]=1;}
+    if(bitRead(status_errors, 1)) {error_bits[10]=1;}
+}
+  ```
+  ---
+2.**Communication Error** 
+  ###### Code from Master Node when recieveing from each node
+```arduino
+           
+            if(current_packet_id-previouse_packet_id > 1) {
+              receivedPacket->error[11]='1';
+            }           
+          // check the missing packet 
+          // write_error(receivedPacket->nodeID, 19) ; 
+            previouse_packet_id = current_packet_id;
+          } 
+         else
+         {
+         SerialUSB.println("Recieve failed");
+         char temp1[]={'0','0','0','0','0','0','0','0','0','0','0','0','1','0','0','0'};
+         write_error(5, temp1);                               // Save the error code as message receive failed 
+         }
+```
+
+3. **Error log structure** - Error Log structure from Master Node which checks the error code from each node with the node error database to log the exact error in the flash memory later and print it.
+           
+```arduino
+void print_errors(char* err){
+  SerialUSB.print("Timestamp :")
+  SerialUSB.print(millis())
+  SerialUSB.println("Error =  ");
+  // SerialUSB.println(err);
+  // SerialUSB.println(err.charAt(1));
+
+ if (err[0] == '1') {
+ SerialUSB.println("System Reset");
+ }
+ 
+ if (err[1] == '1') {
+ SerialUSB.println("Watchdog Reset");
+ }
+ if (err[2] == '1') {
+ SerialUSB.println("External Reset");
+ }
+ if (err[3] == '1') {
+ SerialUSB.println("Command not allowed error: PROTECTED STATE");
+ }
+ if (err[4] == '1') {
+ SerialUSB.println("DSU Operation Failure Error");
+ }
+ if (err[5] == '1') {
+ SerialUSB.println("BUS ERROR Detected!");
+ }
+ if (err[6] == '1') {
+ SerialUSB.println("COLD PLUGGING ERROR!!");
+ }
+ if (err[7] == '1') {
+ SerialUSB.println("HOT PLUGGING ERROR!");
+ }
+ if (err[8] == '1') {
+ SerialUSB.println("DCC1 Written Error");
+ }
+ if (err[9] == '1') {
+ SerialUSB.println("DCC0 Written Error");
+ }
+ if (err[10] == '1') {
+ SerialUSB.println("Debugger Probe Error");
+ }
+ if (err[11] == '1') {
+ SerialUSB.println("Missing Packet Error!");
+ }
+ if (err[12] == '1') {
+ SerialUSB.println("Packet Receival Error");
+ }
+}
+```
+
+4. **Store only the error code in the flash storage**
+
+```arduino
+void write_error(uint8_t Node_name, char* ecodeX) //---------changed
+{
+  int ecode=atoi(ecodeX);
+  if(Node_name==3)
+  {error_Amlan.write(ecode);}
+
+   if(Node_name==2)
+  {error_Shaswati.write(ecode);}
+
+    if(Node_name==4)
+  {error_Anuruddha.write(ecode);}
+
+    if(Node_name==1)
+  {error_Avhishek.write(ecode);}
+    
+    if(Node_name==5)
+  {error_receive.write(ecode);}
+}
+
+FlashStorage(error_Amlan, int);                 // Reserve a portion of flash memory, remove/comment when upload to the transmitter 
+FlashStorage(error_Shaswati, int);                                                   
+FlashStorage(error_Anuruddha, int);
+FlashStorage(error_Avhishek, int);
+FlashStorage(error_receive, int);
+
+SerialUSB.println();
+//FLASH STORAGE DETAILS PRINT
+SerialUSB.println("FLASH STORAGE RESULTS");
+SerialUSB.print("AMLAN: ");SerialUSB.print(error_Amlan.read());
+SerialUSB.print(", SHASWATI: ");SerialUSB.print(error_Shaswati.read());
+SerialUSB.print(", ANURUDDHA: ");SerialUSB.print(error_Anuruddha.read());
+SerialUSB.print(", AVHISHEK: ");SerialUSB.print(error_Avhishek.read());
+SerialUSB.print(", ERROR RECEIVE ");SerialUSB.println(error_receive.read());
+
+```
+   
+<div style="margin-top: 200px;"></div>
+
+---
+---
+---
 
 
 
 
-  
+
+
 ## Task 4 : Timer
 
 ### Requirements
@@ -201,19 +432,49 @@ float Readtemp() {
 #### Subtask 1:
 
 ```arduino
-void setup() {
-  SerialUSB.begin(9600);
-  TempZero.init();
-  pinMode(PIN_LED_13, OUTPUT);
-  startTimer(1);
+void startTimer(int frequencyHz) {
+  configureClockTC4();
+  configureTimerTC4(frequencyHz);
+}
+void configureClockTC4() {
+  REG_GCLK_CLKCTRL = (uint16_t)(GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID_TC4_TC5);
+  while (GCLK->STATUS.bit.SYNCBUSY == 1);
 }
 
-float Readtemp() {
-  if (canReadTemp) {
-    float temperature = TempZero.readInternalTemperature();
-    SerialUSB.print("Internal Temperature is: ");
-    SerialUSB.println(temperature);
-    }
+void configureTimerTC4(int frequencyHz) {
+  TcCount16* TC = (TcCount16*)TC4;
+  TC->CTRLA.reg &= ~TC_CTRLA_ENABLE;
+  while (TC->STATUS.bit.SYNCBUSY == 1);
+
+  TC->CTRLA.reg |= TC_CTRLA_MODE_COUNT16 | TC_CTRLA_WAVEGEN_MFRQ | TC_CTRLA_PRESCALER_DIV1024;
+  while (TC->STATUS.bit.SYNCBUSY == 1);
+
+  setTimerFrequencyTC4(TC, frequencyHz);
+  TC->INTENSET.reg = 0;
+  TC->INTENSET.bit.MC0 = 1;
+
+  NVIC_EnableIRQ(TC4_IRQn);
+  TC->CTRLA.reg |= TC_CTRLA_ENABLE;
+  while (TC->STATUS.bit.SYNCBUSY == 1);
+}
+
+void setTimerFrequencyTC4(TcCount16* TC, int frequencyHz) {
+  int compareValue = (CPU_HZ / (TIMER_PRESCALER_DIV * frequencyHz)) - 1;
+  TC->CC[0].reg = compareValue;
+  while (TC->STATUS.bit.SYNCBUSY == 1);
+}
+
+void TC4_Handler() {
+  static bool isLEDOn = false;
+  TcCount16* TC = (TcCount16*)TC4;
+  if (TC->INTFLAG.bit.MC0 == 1) {
+    TC->INTFLAG.bit.MC0 = 1;
+    digitalWrite(PIN_LED_13, isLEDOn);
+    SerialUSB.println(isLEDOn ? "Blue LED is on" : "Blue LED is off");
+    isLEDOn = !isLEDOn;
+    canReadTemp = true;
+  }
+}
 ```
 
 

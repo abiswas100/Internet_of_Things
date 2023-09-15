@@ -306,14 +306,15 @@ void loop()
 
             write_error(receivedPacket->nodeID, receivedPacket->error) ;                       //Write the received packet error in the correct node memory allocation in the server------changed 
       
-               current_packet_id = receivedPacket->packetID;                 //Assign the current packet ID to the current_packet_id variable 
+            current_packet_id = receivedPacket->packetID;                 //Assign the current packet ID to the current_packet_id variable 
         
-              if(current_packet_id-previouse_packet_id > 1) {
-                receivedPacket->error[11]='1';
-              }           //check the missing packet 
-                    //  write_error(receivedPacket->nodeID, 19) ; 
-                     previouse_packet_id = current_packet_id;
-         } 
+            if(current_packet_id-previouse_packet_id > 1) {
+              receivedPacket->error[11]='1';
+            }           
+          // check the missing packet 
+          // write_error(receivedPacket->nodeID, 19) ; 
+            previouse_packet_id = current_packet_id;
+          } 
          else
          {
          SerialUSB.println("Recieve failed");
@@ -578,8 +579,9 @@ void write_error(uint8_t Node_name, char* ecodeX) //---------changed
 }
 
 void print_errors(char* err){
-
-  SerialUSB.println("Error=  ");
+  SerialUSB.print("Timestamp :")
+  SerialUSB.print(millis())
+  SerialUSB.println("Error =  ");
   // SerialUSB.println(err);
   // SerialUSB.println(err.charAt(1));
 
