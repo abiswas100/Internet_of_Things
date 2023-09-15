@@ -11,8 +11,8 @@
 ## Task 1 : Sensing
 
 ### Requirements
-1. Sense the internal temperature every second
-2. Implement a sliding window to calculate the average temperature over the last 5 second using a stack
+1. Sense the internal temperature every second.
+2. Implement a sliding window to calculate the average temperature over the last 5 second using a stack.
 
 ---
 
@@ -141,14 +141,120 @@ float Readtemp() {
 
 <div style="margin-top: 200px;"></div>
 
+---
+---
+---
+
+  
+
+
+
+
+  
+## Task 4 : Timer
+
+### Requirements
+1. For periodical tasks, use the timer technique we learnt from last lab.
+
+---
+
+#### Development Plan:
+
+#### a. Procedure of Solving the Problem
+
+1. The function `startTimer(int frequencyHz)` is the entry point for setting up the timer. It calls two other functions: `configureClock()` and `configureTimer(frequencyHz)`.
+2. The function `configureClock()` sets up the general clock by writing to the `REG_GCLK_CLKCTRL` register and waiting for synchronization.
+3. The function `configureTimer(int frequencyHz)` sets up the timer by configuring its control register, setting its frequency, and enabling interrupts.
+4. Inside `configureTimer()`, the function `setTimerFrequency(TC, frequencyHz)`` is called to set the timer frequency based on the input frequency in Hz.
+5. The code enables timer interrupts by setting the `TC->INTENSET.bit.MC0 = 1` and specifies that the interrupt to be used is `TC3_IRQn`.
+6. The function `TC3_Handler()` serves as the interrupt handler. It toggles an LED and prints a message to the serial port.
+7. The function `setTimerFrequency(TcCount16* TC, int frequencyHz)` calculates the compare value for the timer based on the desired frequency.
+
+
+#### b. Configuration Table
+
+| Requirement          | Register Name       | Register Function                          | Register Value                                                                 |
+|----------------------|---------------------|--------------------------------------------|---------------------------------------------------------------------------------|
+| Clock Configuration  | `REG_GCLK_CLKCTRL`  | Configure Generic Clock Control            | `GCLK_CLKCTRL_CLKEN \| GCLK_CLKCTRL_GEN_GCLK0 \| GCLK_CLKCTRL_ID_TCC2_TC3`     |
+| Timer Configuration  | `TC->CTRLA.reg`     | Timer Control A Register                   | `TC_CTRLA_MODE_COUNT16 \| TC_CTRLA_WAVEGEN_MFRQ \| TC_CTRLA_PRESCALER_DIV1024`  |
+| Timer Frequency      | `TC->CC[0].reg`     | Timer Compare/Capture Register              | `compareValue` (Calculated based on `frequencyHz`, `CPU_HZ`, and `TIMER_PRESCALER_DIV`) |
+| Timer Interrupt      | `TC->INTENSET.reg`  | Timer Interrupt Enable Set Register        | `TC_INTENSET.bit.MC0 = 1`                                                       |
+| NVIC Configuration   | `NVIC_EnableIRQ()`  | Nested Vector Interrupt Controller         | `TC3_IRQn`                                                                      |
+| Clock Sync           | `GCLK->STATUS.bit.SYNCBUSY` | Clock Synchronization Busy Status    | `1` (Wait until it becomes 0)                                                   |
+| Timer Sync           | `TC->STATUS.bit.SYNCBUSY`   | Timer Synchronization Busy Status      | `1` (Wait until it becomes 0)                                                   |
+
+#### b. Run-time Errors
+
+| Error Code       | Error Description |
+|------------------|-------------------|
+| `clock_sync`     | Synchronization busy flag for the clock never clears, causing an infinite loop in `configureClock()` |
+| `timer_sync`     | Synchronization busy flag for the timer never clears, causing an infinite loop in `configureTimer()` and `setTimerFrequency()` |
+| `clock_config`   | Incorrect configuration of the general clock in `configureClock()` leading to undesired behavior |
+| `timer_config`   | Incorrect timer configuration in `configureTimer()` leading to undesired behavior |
+| `freq_calc`      | Incorrect calculation of `compareValue` in `setTimerFrequency()` leading to incorrect timer frequency |
+| `irq_fail`       | Failure to enable the interrupt correctly, causing `TC3_Handler()` not to be called |
+| `flag_mismatch`  | `TC->INTFLAG.bit.MC0` is not set or cleared correctly, causing issues in `TC3_Handler()` |
+
+---
+### 2. Development Process:
+
+#### Subtask 1:
+
+```arduino
+void setup() {
+  SerialUSB.begin(9600);
+  TempZero.init();
+  pinMode(PIN_LED_13, OUTPUT);
+  startTimer(1);
+}
+
+float Readtemp() {
+  if (canReadTemp) {
+    float temperature = TempZero.readInternalTemperature();
+    SerialUSB.print("Internal Temperature is: ");
+    SerialUSB.println(temperature);
+    }
+```
+
+
+---
+
+### 3. Test Plan:
+1. **LED Blinking using Timer**: 
+    - Verify that the Yellow LED toggles on and off at an interval of 1000 milliseconds.
+
+2. **Serial Output**: 
+    - Verify that the Serial Monitor displays the correct LED status messages ("Blue LED is on/off") in real-time.
+
+
+| Component       | Test Description                           | Result  | Comment                                       |
+|-----------------|--------------------------------------------|---------|------------------------------------------------|
+| Blue LED        | Toggle on/off at 1s interval            | Pass    | LED toggled as expected at 1-second intervals  |
+| Serial Output   | Display "Blue LED is on/off"                | Pass    | Messages displayed correctly in the serial monitor |
+| System Level    | LEDs toggle at correct intervals  of 1sec  | Pass    | Both LEDs toggled at their respective intervals without conflict |
+
+
+---
+### Screenshot
+
+<figure style="text-align: center;">
+  <img src="images_for_lab3/AverageTemp_output.png">
+  <figcaption style="font-weight: bold;">Fig.2 - Blue LED turning on and off every 1 sec based on ticks from the timer. </figcaption>
+</figure>
+
+<div style="margin-top: 200px;"></div>
+
 
 ---
 ---
 ---
+
+
+
 
 ## Appendix
 
-### Task 1:
+### Task 1  and Task 4 :
 ```arduino
 #define CPU_HZ 48000000
 #define TIMER_PRESCALER_DIV 1024
