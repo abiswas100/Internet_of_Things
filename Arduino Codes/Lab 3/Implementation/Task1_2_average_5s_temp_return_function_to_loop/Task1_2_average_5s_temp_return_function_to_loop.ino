@@ -80,7 +80,8 @@ void TC3_Handler() {
 float Readtemp() {
   if (canReadTemp) {
     float temperature = TempZero.readInternalTemperature();
-
+    SerialUSB.print("Internal Temperature is: ");
+    SerialUSB.println(temperature);
     // Remove the oldest temperature from the sum
     tempSum -= tempBuffer[tempIndex];
     

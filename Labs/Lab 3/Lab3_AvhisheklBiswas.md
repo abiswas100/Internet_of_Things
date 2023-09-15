@@ -3,8 +3,7 @@
 
 # Internet of Things lab 3 Fall 2023
 
-## Avhishek Biswas, Anurddha , Amlan, Shaswati
-
+## Group 2 : Avhishek Biswas, Anuruddha Ekanayake, Amlan Balabantaray, Shaswati Behera
 </div>
 
 
@@ -12,7 +11,6 @@
 ## Task 1 : Sensing
 
 ### Requirements
-
 1. Sense the internal temperature every second
 2. Implement a sliding window to calculate the average temperature over the last 5 second using a stack
 
@@ -22,261 +20,256 @@
 
 #### a. Procedure of Solving the Problem
 
-
+1. Install the temperature library. ``#include <TemperatureZero.h>``
+2. Import and initialize the temperature. `TempZero.init()`
+3. Create a function **ReadTemp()** to read the temperature at every second.
+4. Set a general clock ``REG_GCLK_CLKCTRL``.
+5. Set a timer **TC4** in Matched Freqeuncy mode and make it tick for every 1 second.
+6. Create a flag variable that will add turn on to led the temperature to be read.
+7. Inside the readtemp function, also create a global counter ``reportCount`` to  count of number of readings.
+8. When reportCount is equal to 5 we calculate the average and store it in the variable ``avgTemperature`` which is also defined globally.
 
 
 #### b. Configuration Table
 
+| Requirement          | Register Name | Register Function       | Register Value |
+|----------------------|---------------|-------------------------|----------------|
+| Clock Configuration  | `REG_GCLK_CLKCTRL` | Configure Generic Clock Control | `GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID_TCC2_TC3` |
+| Timer Configuration  | `TC->CTRLA.reg` | Timer Control A Register | `TC_CTRLA_MODE_COUNT16 | TC_CTRLA_WAVEGEN_MFRQ | TC_CTRLA_PRESCALER_DIV1024` |
+| Timer Frequency      | `TC->CC[0].reg` | Timer Compare/Capture Register | `compareValue` |
+| Timer Interrupt      | `TC->INTENSET.reg` | Timer Interrupt Enable Set Register | `TC_INTENSET.bit.MC0 = 1` |
+| NVIC Configuration   | `NVIC_EnableIRQ()` | Nested Vector Interrupt Controller | `TC3_IRQn` |
+
+#### b. Run-time Errors
+| Error Code       | Error |
+|--------------|--------|
+mem0 |  memory overflow|
+timer | timer counting error |
+flag0 | seconds counting flag mismatch | 
 
 ---
 ### 2. Development Process:
-
-
 
 #### Subtask 1:
 
+```arduino
+void setup() {
+  SerialUSB.begin(9600);
+  TempZero.init();
+  pinMode(PIN_LED_13, OUTPUT);
+  startTimer(1);
+}
 
+float Readtemp() {
+  if (canReadTemp) {
+    float temperature = TempZero.readInternalTemperature();
+    SerialUSB.print("Internal Temperature is: ");
+    SerialUSB.println(temperature);
+    }
+```
 #### Subtask 2: 
 
+```arduino
+float Readtemp() {
+  if (canReadTemp) {
+    float temperature = TempZero.readInternalTemperature();
+    SerialUSB.print("Internal Temperature is: ");
+    SerialUSB.println(temperature);
+    // Remove the oldest temperature from the sum
+    tempSum -= tempBuffer[tempIndex];
+    
+    // Add the new temperature to the buffer and sum
+    tempBuffer[tempIndex] = temperature;
+    tempSum += temperature;
+
+    // Update the index for the oldest temperature
+    tempIndex = (tempIndex + 1) % WINDOW_SIZE;
+
+    // Update the count of temperatures added to the buffer
+    if (tempCount < WINDOW_SIZE) {
+      tempCount++;
+    }
+
+    // Increment the report counter
+    reportCount++;
+
+    // If 5 readings have been taken, calculate the average temperature
+    if (reportCount >= WINDOW_SIZE) {
+      avgTemperature = tempSum / tempCount;
+      newAvgAvailable = true;  // Set the flag
+      reportCount = 0;  // Reset the report counter
+    }
+
+    canReadTemp = false;
+  }
+  return avgTemperature;
+}
+```
 
 ---
 
 ### 3. Test Plan:
+1. **LED Blinking**: 
+    - Verify that the Blue LED toggles on and off at an interval of 500 milliseconds.
+    - Verify that the Yellow LED toggles on and off at an interval of 1000 milliseconds.
 
----
-### Output:
-  <figure>
-  <img src="images_for_lab2/task1_output.png">
-  <figcaption style="font-weight: bold;">Fig.1 - Console Output.</figcaption>
-</figure>
+2. **Serial Output**: 
+    - Verify that the Serial Monitor displays the correct LED status messages ("Blue LED is on/off", "Yellow LED is on/off") in real-time.
+
+
+| Component       | Test Description                           | Result  | Comment                                       |
+|-----------------|--------------------------------------------|---------|------------------------------------------------|
+| Blue LED        | Toggle on/off at 1s interval            | Pass    | LED toggled as expected at 1-second intervals  |
+| Serial Output   | Display "Blue LED is on/off"                | Pass    | Messages displayed correctly in the serial monitor |
+| Record Temp at 1sec   | Display "Internal Temperature is: "                | Pass    | Messages displayed correctly in the serial monitor |
+| Record Average Temp at 5sec   | Display "Average Temperature over last 5 seconds is:"                | Pass    | Messages displayed correctly in the serial monitor |
+| System Level    | Both LEDs toggle at correct intervals       | Pass    | Both LEDs toggled at their respective intervals without conflict |
+
 
 ---
 ### Screenshot
 
 <figure style="text-align: center;">
-  <img src="images_for_lab2/task1_serial.png">
-  <figcaption style="font-weight: bold;">Fig.2 - Output in the serial monitor.</figcaption>
+  <img src="images_for_lab3/temperature_persecond_output.png">
+  <figcaption style="font-weight: bold;">Fig.1 - Output showing temperature being recorded and reported every second,with LED turned on and off for each second.</figcaption>
 </figure>
 
 <figure style="text-align: center;">
-  <img src="images_for_lab2/task1_yellowonly.jpeg">
-  <figcaption style="font-weight: bold;">Fig.3 - Only blinking of Yellow LED.</figcaption>
+  <img src="images_for_lab3/AverageTemp_output.png">
+  <figcaption style="font-weight: bold;">Fig.2 - Output showing temperature being recorded and reported every 5 seconds,with LED turned on and off for each second.</figcaption>
 </figure>
 
-<figure style="text-align: center;">
-  <img src="images_for_lab2/task1_blueonly.jpeg">
-  <figcaption style="font-weight: bold;">Fig.4 - Only blinking of Blue LED. </figcaption>
-</figure>
-
-<figure style="text-align: center;">
-  <img src="images_for_lab2/task1_blueandyellow.jpeg">
-  <figcaption style="font-weight: bold;">Fig.5 - Blinking of both Yellow and Blue LED.</figcaption>
-</figure>
-
----
-### Video Link
-
-##### See working video -  [Link to Video](https://drive.google.com/file/d/1cECTZJBecwsLMgHnVz9khmInNBYX7sHD/view?usp=sharing).
-
----
----
 <div style="margin-top: 200px;"></div>
 
 
-
-
-
-
-### Requirements
-
-1. **Blue LED**: The Blue LED should toggle its state every 0.5 seconds.
-2. **Yellow LED**: The Yellow LED should toggle its state every 1 second.
-3. **Serial Monitor Output**: The program should output the current state of each LED ("on" or "off") to the Serial Monitor whenever the LED state changes.
 ---
-
-#### Development Plan:
-
-#### a. Procedure of Solving the Problem
-
-
-1. **Initialization**
-    - Open the Arduino IDE and select the SparkFun RF Pro board from the board manager.
-    - Select the appropriate port to which the board is connected.
-
-2. **Pin Configuration**
-    - Configure the digital pins for the Blue (`PIN_LED_13`) and Yellow (`PIN_LED_RXL`) LEDs as output pins using the `pinMode()` function.
-
-3. **Serial Communication Setup**
-    - Initialize Serial communication with a baud rate of 9600 using `SerialUSB.begin(9600)` for debugging and monitoring.
-
-4. **Timer Configuration**
-    - Use TC3 in Match Frequency Operation mode.
-    - Configure the clock source using `REG_GCLK_CLKCTRL`.
-    - Set the timer frequency to 20 Hz using `startTimer(20)`.
-
-5. **Interrupt Handling**
-    - Implement the `TC3_Handler()` function to handle timer interrupts.
-    - Toggle the Blue LED every 750 ms and the Yellow LED every 1000 ms.
-
-6. **Testing**
-    - Verify that the LEDs are blinking at the correct intervals.
-    - Monitor the Serial output to ensure the program is running as expected.
-
-
-#### b. Configuration Table
-
-
-| Register Name          | Register Function                     | Register Value                  |
-|------------------------|---------------------------------------|---------------------------------|
-| `REG_GCLK_CLKCTRL`     | Clock Control                         | `GCLK_CLKCTRL_CLKEN`, `GCLK_CLKCTRL_GEN_GCLK0`, `GCLK_CLKCTRL_ID_TCC2_TC3` |
-| `TC->CTRLA.reg`        | Timer Control A                       | `TC_CTRLA_ENABLE`               |
-| `TC->COUNT.reg`        | Timer Count Register                  | Calculated based on `frequencyHz`|
-| `TC->CC[0].reg`        | Timer Compare/Capture Register        | Calculated based on `frequencyHz`|
-| `TC->INTFLAG.bit.MC0`  | Timer Interrupt Flag for Match        | `1` to clear flag               |
-| `GCLK->GENDIV.reg`     | Clock Generator Division              | `GCLK_GENDIV_ID(2)`, `GCLK_GENDIV_DIV(46875)` |
-| `GCLK->GENCTRL.reg`    | Clock Generator Control               | `GCLK_GENCTRL_ID(2)`, `GCLK_GENCTRL_SRC_DFLL48M`, `GCLK_GENCTRL_GENEN` |
-| `TC->INTENSET.reg`     | Timer Interrupt Enable Set Register   | `TC_INTENSET_OVF`               |
-| `NVIC_EnableIRQ()`     | Nested Vector Interrupt Controller    | `TC3_IRQn`                      |
-
-
----
-### 2. Development Process:
-### Development Process
-
-1. **Initialization**
-   - Open the Arduino IDE.
-   - Select the SparkFun RF Pro board from the board manager.
-   - Choose the appropriate COM port to which the board is connected.
-
- 2. **Pin Configuration**
-   - Configure the digital pins for the LEDs:
-     - Use `pinMode()` to set `PIN_LED_13` (Blue LED) and `PIN_LED_RXL` (Yellow LED) as output pins.
-
- 3. **Serial Communication Setup**
-   - Initialize Serial communication for debugging and real-time monitoring:
-     - Use `SerialUSB.begin(9600)` to set the baud rate to 9600.
-
- 4. **Timer Configuration**
-
-    a. Clock Source Configuration
-   - Use the `REG_GCLK_CLKCTRL` register to configure the clock source for the timer. This register enables the clock and specifies the clock source.
-
-    b. Timer Configuration
-   - Use the `startTimer()` function to configure the timer.
-   - Set the timer frequency to 20 Hz by passing `20` as an argument to `startTimer()`.
-
-   c. **Compare Value Calculation**
-   - The `setTimerFrequency()` function calculates the compare value (`TC->CC[0].reg`) based on the desired frequency (passed as an argument) and the CPU frequency.
-   - This compare value determines when the timer will generate an interrupt.
-
- 5. **Interrupt Handling:**
-
-    a.TC3_Handler() Function - 
-   - `TC3_Handler()` is the interrupt service routine for handling timer interrupts from TC3.
-   - It checks the `TC->INTFLAG.bit.MC0` bit to see if a match condition has occurred.
-   - If a match is detected, the interrupt flag is cleared (`TC->INTFLAG.bit.MC0 = 1`).
-   - The function tracks time using variables:
-     - `currentTime`: Keeps track of the current time in milliseconds.
-     - `blueLEDTime`: Records the time when the Blue LED was last toggled.
-     - `yellowLEDTime`: Records the time when the Yellow LED was last toggled.
-
-    b. LED Toggling - 
-   - Inside `TC3_Handler()`, conditional statements check the time elapsed since the last LED toggle.
-   - If the time exceeds a certain threshold, the corresponding LED is toggled:
-     - Blue LED toggles every 750 ms.
-     - Yellow LED toggles every 1000 ms.
-
-    c. Serial Output - 
-   - SerialUSB.println() is used to print the status of the LEDs to the Serial Monitor for real-time monitoring and debugging.
-
-This development process provides a detailed overview of how the code initializes, configures timers, handles interrupts, and controls LED toggling based on time tracking.
-<div style="margin-top: 80px;"></div>
-#### Approach 4: Using one timer unit
-
-##### a. TC3 must be in the Match Frequency Operation mode
-```arduino
-// Use match mode so that the timer counter resets when the count matches the compare register
-TC->CTRLA.reg |= TC_CTRLA_WAVEGEN_MFRQ;
-while (TC->STATUS.bit.SYNCBUSY == 1); // Wait for synchronization
-```
-##### b. Report how to configure the CC[0].reg register.
-```arduino
-// Set the compare value for the desired frequency
-TC->CC[0].reg = compareValue;
-while (TC->STATUS.bit.SYNCBUSY == 1); // Wait for synchronization
-```
----
-
-### 3. Test Plan:
-
-| Component       | Test Description                             | Result | Comment                                       |
-|-----------------|----------------------------------------------|-----------------|------------------------------------------------|
-| Timer Frequency | Set timer frequency to 20 Hz                | Pass            | To be tested                                   |
-| Timer Interrupt | Verify timer interrupt toggles LEDs         | Pass            | To be tested                                   |
-| Blue LED        | Toggle on/off every 0.5 seconds (750 ms)    | Pass            | To be tested                                   |
-| Yellow LED      | Toggle on/off every 1 second (1000 ms)      | Pass            | To be tested                                   |
-| Serial Output   | Display "Blue LED is on/off"                | Pass            | To be tested                                   |
-| Serial Output   | Display "Yellow LED is on/off"              | Pass            | To be tested                                   |
-| System Level    | Both LEDs toggle at correct intervals      | Pass            | To be tested                                   |
-
-
----
-### Output:
-  <figure>
-  <img src="">
-  <figcaption style="font-weight: bold;"></figcaption>
-</figure>
-
----
-### Screenshot
-
-<figure style="text-align: center;">
-  <img src="images_for_lab2/task4_serial.png">
-  <figcaption style="font-weight: bold;">Fig.17 - Output in the serial monitor.</figcaption>
-</figure>
-
-<figure style="text-align: center;">
-  <img src="images_for_lab2/task4_yellowonly.jpeg">
-  <figcaption style="font-weight: bold;">Fig.18 - Only blinking of Yellow LED.</figcaption>
-</figure>
-
-<figure style="text-align: center;">
-  <img src="images_for_lab2/task4_blueonly.jpeg">
-  <figcaption style="font-weight: bold;">Fig.19 - Only blinking of Blue LED. </figcaption>
-</figure>
-
-<figure style="text-align: center;">
-  <img src="images_for_lab2/task4_blueandyellow.jpeg">
-  <figcaption style="font-weight: bold;">Fig.20 - Blinking of both Yellow and Blue LED.</figcaption>
-</figure>
-
----
-### Video Link
-
-##### See working video -  [Link to Video](https://drive.google.com/file/d/1Z0Eevlciv-8c5KaLxPnYd47Qzbv7vPpI/view?usp=sharing).
-
-
-
-
-<div style="margin-top: 120px;"></div>
-
 ---
 ---
 
-## Appendix 
-The following codes for the different tasks:
+## Appendix
 
 ### Task 1:
+```arduino
+#define CPU_HZ 48000000
+#define TIMER_PRESCALER_DIV 1024
+#define WINDOW_SIZE 5  // Size of the sliding window
+
+#include <TemperatureZero.h>
+
+TemperatureZero TempZero = TemperatureZero();
+volatile bool canReadTemp = false;
+float tempBuffer[WINDOW_SIZE];  // Circular buffer to hold temperature values
+int tempIndex = 0;  // Index to keep track of the oldest temperature value
+float tempSum = 0;  // Sum of temperatures in the buffer
+int tempCount = 0;  // Count of temperatures added to the buffer
+int reportCount = 0;  // Count of readings before reporting
+float avgTemperature = 0;  // To hold the average temperature
+bool newAvgAvailable = false;  // Flag to indicate a new average is available
 
 
+void setup() {
+  SerialUSB.begin(9600);
+  TempZero.init();
+  pinMode(PIN_LED_13, OUTPUT);
+  startTimer(1);
+}
 
+void loop() {
+  Readtemp();
+  if (newAvgAvailable) {
+    SerialUSB.print("Average Temperature over last 5 seconds is: ");
+    SerialUSB.println(avgTemperature);
+    newAvgAvailable = false;  // Reset the flag
+  }
+}
+
+void startTimer(int frequencyHz) {
+  configureClock();
+  configureTimer(frequencyHz);
+}
+
+void configureClock() {
+  REG_GCLK_CLKCTRL = (uint16_t)(GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID_TCC2_TC3);
+  while (GCLK->STATUS.bit.SYNCBUSY == 1);
+}
+
+void configureTimer(int frequencyHz) {
+  TcCount16* TC = (TcCount16*)TC3;
+  TC->CTRLA.reg &= ~TC_CTRLA_ENABLE;
+  while (TC->STATUS.bit.SYNCBUSY == 1);
+
+  TC->CTRLA.reg |= TC_CTRLA_MODE_COUNT16 | TC_CTRLA_WAVEGEN_MFRQ | TC_CTRLA_PRESCALER_DIV1024;
+  while (TC->STATUS.bit.SYNCBUSY == 1);
+
+  setTimerFrequency(TC, frequencyHz);
+  TC->INTENSET.reg = 0;
+  TC->INTENSET.bit.MC0 = 1;
+
+  NVIC_EnableIRQ(TC3_IRQn);
+  TC->CTRLA.reg |= TC_CTRLA_ENABLE;
+  while (TC->STATUS.bit.SYNCBUSY == 1);
+}
+
+void setTimerFrequency(TcCount16* TC, int frequencyHz) {
+  int compareValue = (CPU_HZ / (TIMER_PRESCALER_DIV * frequencyHz)) - 1;
+  TC->CC[0].reg = compareValue;
+  while (TC->STATUS.bit.SYNCBUSY == 1);
+}
+
+void TC3_Handler() {
+  static bool isLEDOn = false;
+  TcCount16* TC = (TcCount16*)TC3;
+  if (TC->INTFLAG.bit.MC0 == 1) 
+  {
+    TC->INTFLAG.bit.MC0 = 1;
+    digitalWrite(PIN_LED_13, isLEDOn);
+    SerialUSB.println(isLEDOn ? "Blue LED is on" : "Blue LED is off");
+    isLEDOn = !isLEDOn;
+    canReadTemp = true;
+  }
+}
+
+float Readtemp() {
+  if (canReadTemp) {
+    float temperature = TempZero.readInternalTemperature();
+    SerialUSB.print("Internal Temperature is: ");
+    SerialUSB.println(temperature);
+    // Remove the oldest temperature from the sum
+    tempSum -= tempBuffer[tempIndex];
+    
+    // Add the new temperature to the buffer and sum
+    tempBuffer[tempIndex] = temperature;
+    tempSum += temperature;
+
+    // Update the index for the oldest temperature
+    tempIndex = (tempIndex + 1) % WINDOW_SIZE;
+
+    // Update the count of temperatures added to the buffer
+    if (tempCount < WINDOW_SIZE) {
+      tempCount++;
+    }
+
+    // Increment the report counter
+    reportCount++;
+
+    // If 5 readings have been taken, calculate the average temperature
+    if (reportCount >= WINDOW_SIZE) {
+      avgTemperature = tempSum / tempCount;
+      newAvgAvailable = true;  // Set the flag
+      reportCount = 0;  // Reset the report counter
+    }
+
+    canReadTemp = false;
+  }
+  return avgTemperature;
+}
 ```
 
-<div style="margin-top: 200px;"></div>
 
----
----
----
+
+
+
+
 
 
 ## References: 
