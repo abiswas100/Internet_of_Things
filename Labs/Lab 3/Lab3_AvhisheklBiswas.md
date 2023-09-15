@@ -123,7 +123,7 @@ float Readtemp() {
 | Serial Output   | Display "Blue LED is on/off"                | Pass    | Messages displayed correctly in the serial monitor |
 | Record Temp at 1sec   | Display "Internal Temperature is: "                | Pass    | Messages displayed correctly in the serial monitor |
 | Record Average Temp at 5sec   | Display "Average Temperature over last 5 seconds is:"                | Pass    | Messages displayed correctly in the serial monitor |
-| System Level    | Both LEDs toggle at correct intervals       | Pass    | Both LEDs toggled at their respective intervals without conflict |
+| System Level    | Blue LEDs toggle at correct intervals       | Pass    | Both LEDs toggled at their respective intervals without conflict |
 
 
 ---
@@ -191,6 +191,7 @@ flag0 | seconds counting flag mismatch |
   6. This process is repeated for every child Node 3 and 4 respectively.
   7. After every transmission for each Node we print the payload values for each Node that is recorded and the errors if present and the FLash storage content.
   8. We also introduce Nodeflag variables, which are basically used so that in the same second the Master does not send multiple packets to a child Node requesting it's payload.
+  9. Also, something to be noted, at the first transmission the Node 1 will not have an average temperature as 5 secs has not passed therefore all the other nodes will be noting it's temperature to be 0. And from the second transmission the average temperature will be showing up this is demostrated with the screenshots of Fig. 3 and 4.
    
 4. At the Child Nodes:
    1. These Node start their functioning by listening into the channel.
@@ -684,26 +685,39 @@ void loop()
 ---
 
 ### 3. Test Plan:
+| Component       | Test Description                           | Result  | Comment                                       |
+|-----------------|--------------------------------------------|---------|------------------------------------------------|
+| Blue LED        | Toggle on/off at 1s interval            | Pass    | LED toggled as expected at 1-second intervals  |
+| Yellow LED        | Toggle on/off at 1s interval            | Pass    | LED toggled as expected during reciving   |
+| Green LED        | Toggle on/off at 1s interval            | Pass    | LED toggled as expected during transmitting |
+| Serial Output   | Showing average Temperature                | Pass    | Messages displayed correctly in the serial monitor |
+| Serial Output   | Showing Flash Memory Content at Master               | Pass    | Messages displayed correctly in the serial monitor |
+| Serial Output   | Showing Temperature for all Nodes at Master               | Pass    | Messages displayed correctly in the serial monitor |
+| Serial Output   | Showing Temperature for all Nodes at Child Node               | Pass    | Messages displayed correctly in the serial monitor |
+| Record Temp at 1sec   | Display "Internal Temperature is: "                | Pass    | Messages displayed correctly in the serial monitor |
+| Record Average Temp at 5sec   | Display "Average Temperature over last 5 seconds is:"                | Pass    | Messages displayed correctly in the serial monitor |
+| System Level    |  LEDs toggle at correct intervals       | Pass    | All LEDs toggled at their respective intervals without conflict |
+
 
 ---
 ### Screenshot
 
 <figure style="text-align: center;">
   <img src="images_for_lab3/Master_working_output.png">
-  <figcaption style="font-weight: bold;">Master 1</figcaption>
+  <figcaption style="font-weight: bold;">Fig 3. Master output serial log showing first communication with Node 2, Node 3 and Node 4. Then the Master prints the Flash Memory and the all the other Nodes temperature. We can see the temperature for Master being 0 for the first transmission.</figcaption>
 </figure>
 
 
 <figure style="text-align: center;">
   <img src="images_for_lab3/Master_working_output2.png">
-  <figcaption style="font-weight: bold;">Master 2</figcaption>
+  <figcaption style="font-weight: bold;">Fig 4. Master output serial log during second transmission with average calculated temperature value.</figcaption>
 </figure>
 
 <div style="margin-top: 60px;"></div>
 
 <figure style="text-align: center;">
   <img src="images_for_lab3/Slave2_working_output.png">
-  <figcaption style="font-weight: bold;">Slave 2</figcaption>
+  <figcaption style="font-weight: bold;">Fig 5. Child Node 2, showing authentication and packet transmission request from Master/Node1. Also subsequent logs show the temperature from other Nodes in required format.</figcaption>
 </figure>
 
 <div style="margin-top: 60px;"></div>
@@ -713,14 +727,14 @@ void loop()
 
 <figure style="text-align: center;">
   <img src="images_for_lab3/Slave3_working_output.png">
-  <figcaption style="font-weight: bold;">Slave 3</figcaption>
+  <figcaption style="font-weight: bold;">Fig 6. Child Node 3, showing authentication and packet transmission request from Master/Node1. Also subsequent logs show the temperature from other Nodes in required format.</figcaption>
 </figure>
 
 <div style="margin-top: 60px;"></div>
 
 <figure style="text-align: center;">
   <img src="images_for_lab3/Slave4_Working_output1.JPG">
-  <figcaption style="font-weight: bold;">Slave 4</figcaption>
+  <figcaption style="font-weight: bold;">Fig 7. Child Node 4, showing authentication and packet transmission request from Master/Node1. Also subsequent logs show the temperature from other Nodes in required format.</figcaption>
 </figure>
 
 
@@ -1088,7 +1102,7 @@ void TC4_Handler() {
 
 <figure style="text-align: center;">
   <img src="images_for_lab3/AverageTemp_output.png">
-  <figcaption style="font-weight: bold;">Fig.2 - Blue LED turning on and off every 1 sec based on ticks from the timer. </figcaption>
+  <figcaption style="font-weight: bold;">Fig.8 - Blue LED turning on and off every 1 sec based on ticks from the timer. </figcaption>
 </figure>
 
 <div style="margin-top: 200px;"></div>
