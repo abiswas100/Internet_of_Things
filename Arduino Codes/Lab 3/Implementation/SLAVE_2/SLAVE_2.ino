@@ -41,6 +41,12 @@ int reportCount = 0;  // Count of readings before reporting
 float avgTemperature = 0;  // To hold the average temperature
 bool newAvgAvailable = false;  // Flag to indicate a new average is available
 
+float node1_temperature = 0;
+float node2_temperature = 0;
+float node3_temperature = 0;
+float node4_temperature = 0;
+
+
 //Define functions used in the program
 void startTimer(int frequencyHz); 
 void configureClockTC4(); 
@@ -50,24 +56,10 @@ void TC4_Handler();
 
 float Readtemp();                           
 void write_error(String Node_name, int ecode);
-//void print_errors(String err);
- 
 
-// //Define variables used 
-// float movingAverage(float value);
-// void Temperature();
-// float temperature = 0.0;
-// int i = 0;
-// float total_temp = 0.0;
 
 int previouse_packet_id = 0;
 int current_packet_id = 0;
-
-// String time_stamp;
-// String node_id_r;
-// String packet_id_r;
-// String temp_value;
-// String error;
 
 // We need to provide the RFM95 module's chip select and interrupt pins to the 
 // rf95 instance below.On the SparkFun ProRF those pins are 12 and 6 respectively.
@@ -170,7 +162,7 @@ void loop()
                 packet.payload = avgTemperature;
                 packet.authID  = 0;
                 strcpy(packet.error,error_bits);//----------------------------------------------------------changed
-
+                    
                 // Serialize the packet into a byte array
                 uint8_t toSend[sizeof(Packet)];
                 memcpy(toSend, &packet, sizeof(Packet));
@@ -179,12 +171,26 @@ void loop()
                 SerialUSB.print("Node 2 Sending packet with ID: ");
                 SerialUSB.println(packet.packetID);
 
+                // SAVE NODE 1 'S TEMPERATURE
+                node1_temperature = receivedPacket->payload;
                 rf95.send(toSend, sizeof(Packet));
+
+
               } 
             }
 
             else
-            {
+            {  node2_temperature = avgTemperature;
+              // SAVING NODE 3 AND 4 TEMPERATURES
+              if(receivedPacket->nodeID == 3){
+                // SAVE NODE 3 'S TEMPERATURE
+                node3_temperature = receivedPacket->payload;
+              }
+              else if(receivedPacket->nodeID == 4){
+                // SAVE NODE 4 'S TEMPERATURE
+                node4_temperature = receivedPacket->payload;
+              }
+
               Node1asked = false;
               SerialUSB.print(", Packet ID: ");
               SerialUSB.print(receivedPacket->packetID);
@@ -194,8 +200,20 @@ void loop()
               SerialUSB.print(receivedPacket->payload);
               SerialUSB.print(" RSSI: ");
               SerialUSB.print(rf95.lastRssi(), DEC);
+              
               SerialUSB.println();
-              // delay(500);
+              SerialUSB.println();
+              
+              SerialUSB.println("PRINTING EVERYONE'S TEMPERATURE");
+              SerialUSB.print("(Avhi, "); SerialUSB.print(node1_temperature, 2); 
+              SerialUSB.print("), (Amlan, "); SerialUSB.print(node2_temperature, 2); 
+              SerialUSB.print("), (Shaswati, "); SerialUSB.print(node3_temperature, 2); 
+              SerialUSB.print("), (Anu, "); SerialUSB.print(node4_temperature, 2); 
+              SerialUSB.println(")");
+              
+              SerialUSB.println();
+              SerialUSB.println();
+
               current_packet_id = receivedPacket->packetID;    //Assign the current packet ID to the current_packet_id variable 
                 
               if(current_packet_id-previouse_packet_id > 1)            //check the missing packet 

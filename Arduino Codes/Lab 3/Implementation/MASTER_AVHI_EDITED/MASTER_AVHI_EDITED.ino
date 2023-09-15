@@ -388,8 +388,8 @@ void loop()
   else if(reportCount == 4 && Master == false)
   {  // set the slaves false for the next 5 secs
       Slave2 = false;
-      Slave3 = false;
-      Slave4 = false;
+      // Slave3 = false;
+      // Slave4 = false;
       Master = true;
       // Send the authentication packet
       SerialUSB.println("Sending Master's Average Temperature. ");
