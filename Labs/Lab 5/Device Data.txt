@@ -1,0 +1,3 @@
+ID Scope - '0ne00ADFCBE'
+Device ID - '1kivxnhp2a0'
+Primary Key - 'bmOIBczHO7aCsoNhxf+tqhy+BxtbRrnxMmQWnKx8SVI='

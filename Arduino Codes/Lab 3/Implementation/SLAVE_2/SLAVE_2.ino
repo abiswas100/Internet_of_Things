@@ -174,8 +174,6 @@ void loop()
                 // SAVE NODE 1 'S TEMPERATURE
                 node1_temperature = receivedPacket->payload;
                 rf95.send(toSend, sizeof(Packet));
-
-
               } 
             }
 
