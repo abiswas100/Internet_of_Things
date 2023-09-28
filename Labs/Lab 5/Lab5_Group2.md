@@ -1,18 +1,17 @@
 
 <div align="center">
 
-# Internet of Things lab 3 Fall 2023
+# Internet of Things lab 5 Fall 2023
 
 ## Group 2 : Avhishek Biswas, Anuruddha Ekanayake, Amlan Balabantaray, Shaswati Behera
 </div>
 
 
   
-## Task 1 : Sensing
+## Task 1 : In IoT Central
 
 ### Requirements
-1. Sense the internal temperature every second.
-2. Implement a sliding window to calculate the average temperature over the last 5 second using a stack.
+1.
 
 ---
 
@@ -20,123 +19,51 @@
 
 #### a. Procedure of Solving the Problem
 
-1. Install the temperature library. ``#include <TemperatureZero.h>``
-2. Import and initialize the temperature. `TempZero.init()`
-3. Create a function **ReadTemp()** to read the temperature at every second.
-4. Set a general clock ``REG_GCLK_CLKCTRL``.
-5. Set a timer **TC4** in Matched Freqeuncy mode and make it tick for every 1 second.
-6. Create a flag variable that will add turn on to led the temperature to be read.
-7. Inside the readtemp function, also create a global counter ``reportCount`` to  count of number of readings.
-8. When reportCount is equal to 5 we calculate the average and store it in the variable ``avgTemperature`` which is also defined globally.
+
 
 
 #### b. Configuration Table
 
-| Requirement          | Register Name | Register Function       | Register Value |
-|----------------------|---------------|-------------------------|----------------|
-| Clock Configuration  | `REG_GCLK_CLKCTRL` | Configure Generic Clock Control | `GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID_TCC2_TC3` |
-| Timer Configuration  | `TC->CTRLA.reg` | Timer Control A Register | `TC_CTRLA_MODE_COUNT16 | TC_CTRLA_WAVEGEN_MFRQ | TC_CTRLA_PRESCALER_DIV1024` |
-| Timer Frequency      | `TC->CC[0].reg` | Timer Compare/Capture Register | `compareValue` |
-| Timer Interrupt      | `TC->INTENSET.reg` | Timer Interrupt Enable Set Register | `TC_INTENSET.bit.MC0 = 1` |
-| NVIC Configuration   | `NVIC_EnableIRQ()` | Nested Vector Interrupt Controller | `TC3_IRQn` |
-
 #### b. Run-time Errors
 | Error Code       | Error |
 |--------------|--------|
-mem0 |  memory overflow|
-timer | timer counting error |
-flag0 | seconds counting flag mismatch | 
+ |  |
+ |  |
+ |  | 
 
 ---
 ### 2. Development Process:
 
 #### Subtask 1:
+Configure a single IoT Central app (one per team) to observe telemetry of
+multiple virtual IoT devices that send temperature, pressure, and humidity data
+and receive  SendData  commands. The virtual IoT devices should also send
+LastCommandReceived  and  LastPowerOn  property to record the epoch times for
+when the device last received a command and when they were last powered on.
 
-```arduino
-void setup() {
-  SerialUSB.begin(9600);
-  TempZero.init();
-  pinMode(PIN_LED_13, OUTPUT);
-  startTimer(1);
-}
+---
 
-float Readtemp() {
-  if (canReadTemp) {
-    float temperature = TempZero.readInternalTemperature();
-    SerialUSB.print("Internal Temperature is: ");
-    SerialUSB.println(temperature);
-    }
-```
 #### Subtask 2: 
+Create a device per team member.
 
-```arduino
-float Readtemp() {
-  if (canReadTemp) {
-    float temperature = TempZero.readInternalTemperature();
-    SerialUSB.print("Internal Temperature is: ");
-    SerialUSB.println(temperature);
-    // Remove the oldest temperature from the sum
-    tempSum -= tempBuffer[tempIndex];
-    
-    // Add the new temperature to the buffer and sum
-    tempBuffer[tempIndex] = temperature;
-    tempSum += temperature;
-
-    // Update the index for the oldest temperature
-    tempIndex = (tempIndex + 1) % WINDOW_SIZE;
-
-    // Update the count of temperatures added to the buffer
-    if (tempCount < WINDOW_SIZE) {
-      tempCount++;
-    }
-
-    // Increment the report counter
-    reportCount++;
-
-    // If 5 readings have been taken, calculate the average temperature
-    if (reportCount >= WINDOW_SIZE) {
-      avgTemperature = tempSum / tempCount;
-      newAvgAvailable = true;  // Set the flag
-      reportCount = 0;  // Reset the report counter
-    }
-
-    canReadTemp = false;
-  }
-  return avgTemperature;
-}
-```
+---
+#### Subtask 3: 
+Create dashboard with charts for every telemetry data type that will be received. This should include data from all the devices.
 
 ---
 
 ### 3. Test Plan:
-1. **LED Blinking**: 
-    - Verify that the Blue LED toggles on and off at an interval of 500 milliseconds.
-    - Verify that the Yellow LED toggles on and off at an interval of 1000 milliseconds.
 
-2. **Serial Output**: 
-    - Verify that the Serial Monitor displays the correct LED status messages ("Blue LED is on/off", "Yellow LED is on/off") in real-time.
-
-
-| Component       | Test Description                           | Result  | Comment                                       |
-|-----------------|--------------------------------------------|---------|------------------------------------------------|
-| Blue LED        | Toggle on/off at 1s interval            | Pass    | LED toggled as expected at 1-second intervals  |
-| Serial Output   | Display "Blue LED is on/off"                | Pass    | Messages displayed correctly in the serial monitor |
-| Record Temp at 1sec   | Display "Internal Temperature is: "                | Pass    | Messages displayed correctly in the serial monitor |
-| Record Average Temp at 5sec   | Display "Average Temperature over last 5 seconds is:"                | Pass    | Messages displayed correctly in the serial monitor |
-| System Level    | Blue LEDs toggle at correct intervals       | Pass    | Both LEDs toggled at their respective intervals without conflict |
 
 
 ---
 ### Screenshot
 
-<figure style="text-align: center;">
-  <img src="images_for_lab3/temperature_persecond_output.png">
-  <figcaption style="font-weight: bold;">Fig.1 - Output showing temperature being recorded and reported every second,with LED turned on and off for each second.</figcaption>
-</figure>
+
 
 <figure style="text-align: center;">
-  <img src="images_for_lab3/AverageTemp_output.png">
-  <figcaption style="font-weight: bold;">Fig.2 - Output showing temperature being recorded and reported every 5 seconds,with LED turned on and off for each second.</figcaption>
+  <img src="">
+  <figcaption style="font-weight: bold;"></figcaption>
 </figure>
 
 <div style="margin-top: 200px;"></div>
