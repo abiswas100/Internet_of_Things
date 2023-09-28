@@ -19,8 +19,8 @@
 
 2. Configure Device 
 
-a. Implement device code to send temperature, pressure, and humidity using the iotc  library. You can simulate the actual values. A device should send data every 60 seconds or whenever it receives a command from IoT Central. It should also send properties whenever appropriate.
-b. Configure the device code in each of the team member's laptop.
+   a. Implement device code to send temperature, pressure, and humidity using the iotc  library. You can simulate the actual values. A device should send data every 60 seconds or whenever it receives a command from IoT Central. It should also send properties whenever appropriate.
+   b. Configure the device code in each of the team member's laptop.
 ---
 
 #### Development Plan:
@@ -35,7 +35,7 @@ b. Configure the device code in each of the team member's laptop.
 #### b. Run-time Errors
 | Error Code       | Error |
 |--------------|--------|
- |  |
+ |  |fail connection to IoT central
  |  |
  |  | 
 
@@ -43,7 +43,11 @@ b. Configure the device code in each of the team member's laptop.
 ### 2. Development Process:
 
 #### Subtask 1:
+We configured 2 IoT Central App, each communicating to 2 members in our team.
 
+Avhiapp -  Configured to Avhishek and Anuruddha
+
+Amlanapp - Configured to Amlan and Shaswati
 
 ---
 
@@ -64,6 +68,11 @@ b. Configure the device code in each of the team member's laptop.
 ### Screenshot
 
 
+
+<figure style="text-align: center;">
+  <img src="">
+  <figcaption style="font-weight: bold;"></figcaption>
+</figure>
 
 <figure style="text-align: center;">
   <img src="">

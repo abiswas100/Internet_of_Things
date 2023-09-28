@@ -4,9 +4,9 @@ import time
 from iotc.models import Command, Property
 from iotc import IoTCClient, IOTCConnectType, IOTCEvents
 
-scope_id = 'YOUR SCOPE ID'
-device_id = 'YOUR DEVICE ID'
-device_key = 'YOUR PRIMARY SAS KEY'
+scope_id = '0ne00ADFCBE'
+device_id = '1kivxnhp2a0'
+device_key = 'bmOIBczHO7aCsoNhxf+tqhy+BxtbRrnxMmQWnKx8SVI='
 
 
 def on_commands(command: Command):

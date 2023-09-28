@@ -5,8 +5,8 @@ from iotc.models import Command, Property
 from iotc import IoTCClient, IOTCConnectType, IOTCEvents
 
 scope_id = '0ne00ADFCBE'
-device_id = '1kivxnhp2a0'
-device_key = 'bmOIBczHO7aCsoNhxf+tqhy+BxtbRrnxMmQWnKx8SVI='
+device_id = '2fclswaoqbz'
+device_key = '2s83CCMrNp+8MspcJ45dg4Bxz2YGLQpxRebjrZm2z70='
 
 LastTurnedOn = time.time()
 temp = str(random.randint(0, 40))
