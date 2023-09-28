@@ -11,8 +11,16 @@
 ## Task 1 : In IoT Central
 
 ### Requirements
-1.
+1. Configuring IoT Central
 
+    a. Configure a single IoT Central app (one per team) to observe telemetry of multiple virtual IoT devices that send temperature, pressure, and humidity data and receive  SendData  commands. The virtual IoT devices should also send LastCommandReceived  and  LastPowerOn  property to record the epoch times for when the device last received a command and when they were last powered on.
+    b. Create a device per team member.
+    c. Create dashboard with charts for every telemetry data type that will be received. This should include data from all the devices.
+
+2. Configure Device 
+
+a. Implement device code to send temperature, pressure, and humidity using the iotc  library. You can simulate the actual values. A device should send data every 60 seconds or whenever it receives a command from IoT Central. It should also send properties whenever appropriate.
+b. Configure the device code in each of the team member's laptop.
 ---
 
 #### Development Plan:
@@ -35,20 +43,16 @@
 ### 2. Development Process:
 
 #### Subtask 1:
-Configure a single IoT Central app (one per team) to observe telemetry of
-multiple virtual IoT devices that send temperature, pressure, and humidity data
-and receive  SendData  commands. The virtual IoT devices should also send
-LastCommandReceived  and  LastPowerOn  property to record the epoch times for
-when the device last received a command and when they were last powered on.
+
 
 ---
 
 #### Subtask 2: 
-Create a device per team member.
+
 
 ---
 #### Subtask 3: 
-Create dashboard with charts for every telemetry data type that will be received. This should include data from all the devices.
+
 
 ---
 
