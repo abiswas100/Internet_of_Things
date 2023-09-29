@@ -26,11 +26,6 @@ def on_commands(command: Command):
     "LastCommandReceived": time.time()
     })
     iotc.send_property({
-        # "SendTelemetry" : iotc.send_telemetry({
-        #                                         'Temperature': str(random.randint(0, 40)),
-        #                                         'Pressure' : str(random.randint(1, 10)),
-        #                                         'Humidity' : str(random.randint(0,100))
-        #                                         })
         "SendTelemetry" : telemetry_str
     })
     
