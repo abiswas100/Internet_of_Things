@@ -157,5 +157,18 @@ X = rain.drop(['RainTomorrow'],axis=1)
 y = rain['RainTomorrow']
 
 # Split training and test split
-X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.01, random_state = 0)
+
+# Xtrain_split and Y_train_split will contain the 99% of the dataset that will be split into train and test
+# Xtest_split and Y_test_split contains the 1% of the dataset.
+
+X_train_split_1, X_test_split_1, y_train_split_1, y_test_split_1 = train_test_split(X,y, test_size = 0.01, random_state = 0)
+
+# Further divide the X_train_split_1 and y_train_split_1 into 80-20 training and testing dataset
+
+X_train, X_test, y_train, y_test = train_test_split(X_train_split_1, y_train_split_1, test_size=0.2, random_state=0)
+
+# Save y_test and X_test into CSV files
+y_test_split_1.to_csv('y_test.csv', index=False)
+X_test_split_1.to_csv('X_test.csv', index=False)
+
 
