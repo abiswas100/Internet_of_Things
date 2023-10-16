@@ -156,8 +156,12 @@ print(rain['RainTomorrow'].value_counts())
 X = rain.drop(['RainTomorrow'],axis=1)
 y = rain['RainTomorrow']
 
+# Import the X_remaining and y_remaining data from CSV files
+X_remaining99 = pd.read_csv('X_remaining.csv')
+y_remaining99 = pd.read_csv('y_remaining.csv')
+
 # Split training and test split
-X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.2, random_state = 0)
+X_train, X_test, y_train, y_test = train_test_split(X_remaining99,y_remaining99, test_size = 0.2, random_state = 0)
 
 # Scale input using just the training set to prevent bias
 scaler = StandardScaler()

@@ -163,12 +163,23 @@ y = rain['RainTomorrow']
 
 X_train_split_1, X_test_split_1, y_train_split_1, y_test_split_1 = train_test_split(X,y, test_size = 0.01, random_state = 0)
 
-# Further divide the X_train_split_1 and y_train_split_1 into 80-20 training and testing dataset
+# Concatenate X_test_split_1 and y_test_split_1 along the column axis
+combined_1_percent_data = pd.concat([X_test_split_1, y_test_split_1], axis=1)
 
-X_train, X_test, y_train, y_test = train_test_split(X_train_split_1, y_train_split_1, test_size=0.2, random_state=0)
+# Save the combined DataFrame to a CSV file
+combined_1_percent_data.to_csv('combined_test_data.csv', index=False)
 
-# Save y_test and X_test into CSV files
-y_test_split_1.to_csv('y_test.csv', index=False)
-X_test_split_1.to_csv('X_test.csv', index=False)
+# Drop the 1% test data from the original X and y
+X_remaining = X.drop(X_test_split_1.index)
+y_remaining = y.drop(y_test_split_1.index)
+
+# Save the remaining X and y to separate CSV files
+X_remaining.to_csv('X_remaining.csv', index=False)
+y_remaining.to_csv('y_remaining.csv', index=False)
 
 
+# Concatenate the remaining X and y along the column axis
+combined_remaining_data = pd.concat([X_remaining, y_remaining], axis=1)
+
+# Save the combined DataFrame to a CSV file
+combined_remaining_data.to_csv('combined_remaining_data.csv', index=False)
