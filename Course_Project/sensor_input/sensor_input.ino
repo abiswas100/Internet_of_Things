@@ -1,4 +1,12 @@
-#include <DHT.h>  // Include the library for the DHT sensor
+
+// Things needed to be done in this code .. 
+
+// Install the sensor packages.
+// Add code for threshold to light up a certain LED in analog pin X to start signal system for each sensor.
+// Keep logs of all these events.
+// Save the data in a CSV to train an ML Model.
+
+//#include <DHT.h>  // Include the library for the DHT sensor
 
 #define DHTPIN 2     // Define the pin where the DHT sensor is connected
 #define DHTTYPE DHT11 // Define the type of DHT sensor
@@ -7,6 +15,7 @@ DHT dht(DHTPIN, DHTTYPE);
 #define SOIL_MOISTURE_PIN A0 // Define the pin for the soil moisture sensor
 #define LIGHT_SENSOR_PIN A1  // Define the pin for the light sensor
 #define CO2_SENSOR_PIN A2    // Define the pin for the CO2 sensor
+
 
 void setup() {
   Serial.begin(9600);
