@@ -1,0 +1,8 @@
+= 24.00
+Light intensity = 523.00
+Soil Moisture = 886
+Door State = State = Closed
+Humidity (%) = 12.00
+DHT_Temperature  (C) = 24.00
+Light intensity = 523.00
+Soil Moisture = 886
