@@ -27,7 +27,19 @@ def send_to_cloud(temperature, humidity, light_intensity, soil_moisture):
         "LastTurnedOn": time.time()
     })
 
-    while iotc.is_connected():
+    # while iotc.is_connected():
+    #     iotc.send_telemetry({
+    #         # 'temperature': str(random.randint(0, 40)),
+    #         # 'humidity' : str(random.randint(0, 100)),
+    #         # 'light_intensity' : str(random.randint(800, 1000)),
+    #         # 'soil_moisture' : str(random.randint(100, 1000))
+    #         'temperature': temperature,
+    #         'humidity' : humidity,
+    #         'light_intensity' : light_intensity,
+    #         'soil_moisture' : soil_moisture
+    #     })
+    #     time.sleep(10)
+    if iotc.is_connected():
         iotc.send_telemetry({
             # 'temperature': str(random.randint(0, 40)),
             # 'humidity' : str(random.randint(0, 100)),
@@ -38,12 +50,12 @@ def send_to_cloud(temperature, humidity, light_intensity, soil_moisture):
             'light_intensity' : light_intensity,
             'soil_moisture' : soil_moisture
         })
-        time.sleep(10)
+        # time.sleep(10)
 
 
-temperature= str(random.randint(0, 40))
-humidity = str(random.randint(0, 100))
-light_intensity = str(random.randint(800, 1000))
-soil_moisture = str(random.randint(100, 1000))
+# temperature= str(random.randint(0, 40))
+# humidity = str(random.randint(0, 100))
+# light_intensity = str(random.randint(800, 1000))
+# soil_moisture = str(random.randint(100, 1000))
 
-send_to_cloud(25,humidity,light_intensity,soil_moisture)
+# send_to_cloud(25,humidity,light_intensity,soil_moisture)
