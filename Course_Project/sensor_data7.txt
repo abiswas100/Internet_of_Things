@@ -1,0 +1,2536 @@
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 7513
+Light intensity = 461.00
+me = 7418
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 7513
+Light intensity = 461.00
+Watchdog Demo Starting
+Time = 4000
+Soil Moisture = 885
+Time = 4000
+Door State = Closed
+Time = 4003
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 4098
+Light intensity = 460.00
+Time = 5139
+Soil Moisture = 886
+Time = 5139
+Door State = Closed
+Time = 5142
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 5236
+Light intensity = 460.00
+Time = 6277
+Soil Moisture = 886
+Time = 6277
+Door State = Closed
+Time = 6280
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 6374
+Light intensity = 460.00
+Time = 7415
+Soil Moisture = 886
+Time = 7415
+Door State = Closed
+Time = 7418
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 7513
+Light intensity = 461.00
+Time = 8554
+Soil Moisture = 886
+Time = 8554
+Door State = Closed
+Time = 8557
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 8651
+Light intensity = 461.00
+Time = 9692
+Soil Moisture = 886
+Time = 9692
+Door State = Closed
+Time = 9695
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 9789
+Light intensity = 460.00
+Time = 10830
+Soil Moisture = 886
+Time = 10830
+Door State = Closed
+Time = 10835
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 10931
+Light intensity = 461.00
+Time = 11973
+Soil Moisture = 886
+Time = 11973
+Door State = Closed
+Time = 11978
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 12073
+Light intensity = 460.00
+Time = 13115
+Soil Moisture = 886
+Time = 13115
+Door State = Closed
+Time = 13120
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 13215
+Light intensity = 460.00
+Time = 14257
+Soil Moisture = 886
+Time = 14257
+Door State = Closed
+Time = 14262
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 14357
+Light intensity = 460.00
+Time = 15399
+Soil Moisture = 886
+Time = 15399
+Door State = Closed
+Time = 15405
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 15500
+Light intensity = 462.00
+Time = 16542
+Soil Moisture = 886
+Time = 16542
+Door State = Closed
+Time = 16547
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 16643
+Light intensity = 461.00
+Time = 17685
+Soil Moisture = 886
+Time = 17685
+Door State = Closed
+Time = 17690
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 17785
+Light intensity = 460.00
+Time = 18827
+Soil Moisture = 886
+Time = 18827
+Door State = Closed
+Time = 18832
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 18927
+Light intensity = 461.00
+Time = 19969
+Soil Moisture = 886
+Time = 19969
+Door State = Closed
+Time = 19974
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 20069
+Light intensity = 458.00
+Time = 21111
+Soil Moisture = 885
+Time = 21111
+Door State = Closed
+Time = 21116
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 21212
+Light intensity = 459.00
+Time = 22254
+Soil Moisture = 886
+Time = 22254
+Door State = Closed
+Time = 22259
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 22354
+Light intensity = 453.00
+Time = 23396
+Soil Moisture = 887
+Time = 23396
+Door State = Closed
+Time = 23401
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 23496
+Light intensity = 430.00
+Time = 24538
+Soil Moisture = 886
+Time = 24538
+Door State = Closed
+Time = 24543
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 24638
+Light intensity = 433.00
+Time = 25680
+Soil Moisture = 886
+Time = 25680
+Door State = Closed
+Time = 25686
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 25781
+Light intensity = 435.00
+Time = 26823
+Soil Moisture = 886
+Time = 26823
+Door State = Closed
+Time = 26828
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 26924
+Light intensity = 431.00
+Time = 27966
+Soil Moisture = 884
+Time = 27966
+Door State = Opened
+Time = 27971
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 28066
+Light intensity = 428.00
+Time = 29108
+Soil Moisture = 888
+Time = 29108
+Door State = Opened
+Time = 29113
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 29208
+Light intensity = 409.00
+Time = 30251
+Soil Moisture = 886
+Time = 30251
+Door State = Opened
+Time = 30256
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 30351
+Light intensity = 446.00
+Time = 31393
+Soil Moisture = 885
+Time = 31393
+Door State = Opened
+Time = 31398
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 31494
+Light intensity = 492.00
+Time = 32536
+Soil Moisture = 880
+Time = 32536
+Door State = Opened
+Time = 32541
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 32636
+Light intensity = 488.00
+Time = 33678
+Soil Moisture = 887
+Time = 33678
+Door State = Opened
+Time = 33683
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 33778
+Light intensity = 429.00
+Time = 34820
+Soil Moisture = 887
+Time = 34820
+Door State = Opened
+Time = 34825
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 34920
+Light intensity = 273.00
+Night Time! turning LIGHTS ON
+Time = 35994
+Soil Moisture = 887
+Time = 35994
+Door State = Opened
+Time = 35999
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 36094
+Light intensity = 204.00
+Night Time! turning LIGHTS ON
+Time = 37168
+Soil Moisture = 890
+Time = 37168
+Door State = Opened
+Time = 37173
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 37268
+Light intensity = 156.00
+Night Time! turning LIGHTS ON
+Time = 38342
+Soil Moisture = 887
+Time = 38342
+Door State = Opened
+Time = 38347
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 38443
+Light intensity = 123.00
+Night Time! turning LIGHTS ON
+Time = 39516
+Soil Moisture = 886
+Time = 39516
+Door State = Opened
+Time = 39521
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 39616
+Light intensity = 124.00
+Night Time! turning LIGHTS ON
+Time = 40690
+Soil Moisture = 886
+Time = 40690
+Door State = Opened
+Time = 40695
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 40791
+Light intensity = 109.00
+Night Time! turning LIGHTS ON
+Time = 41864
+Soil Moisture = 879
+Time = 41864
+Door State = Opened
+Time = 41869
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 41964
+Light intensity = 91.00
+Night Time! turning LIGHTS ON
+Time = 43037
+Soil Moisture = 888
+Time = 43037
+Door State = Opened
+Time = 43042
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 43138
+Light intensity = 104.00
+Night Time! turning LIGHTS ON
+Time = 44211
+Soil Moisture = 880
+Time = 44211
+Door State = Opened
+Time = 44216
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 44311
+Light intensity = 250.00
+Night Time! turning LIGHTS ON
+Time = 45385
+Soil Moisture = 887
+Time = 45385
+Door State = Opened
+Time = 45390
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 45486
+Light intensity = 484.00
+Time = 46528
+Soil Moisture = 882
+Time = 46528
+Door State = Opened
+Time = 46533
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 46628
+Light intensity = 461.00
+Time = 47670
+Soil Moisture = 885
+Time = 47670
+Door State = Opened
+Time = 47675
+Humidity (%) = 17.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 47770
+Light intensity = 464.00
+Time = 48812
+Soil Moisture = 887
+Time = 48812
+Door State = Opened
+Time = 48817
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 48912
+Light intensity = 470.00
+Time = 49954
+Soil Moisture = 857
+Time = 49954
+Door State = Opened
+Time = 49959
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 50055
+Light intensity = 470.00
+Time = 51097
+Soil Moisture = 112
+Dry soil! turning PUMP ON
+Time = 51097
+Door State = Opened
+Time = 51130
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 51225
+Light intensity = 471.00
+Time = 52267
+Soil Moisture = 115
+Dry soil! turning PUMP ON
+Time = 52267
+Door State = Opened
+Time = 52299
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 52395
+Light intensity = 467.00
+Time = 53436
+Soil Moisture = 20
+Dry soil! turning PUMP ON
+Time = 53436
+Door State = Opened
+Time = 53468
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 53563
+Light intensity = 471.00
+Time = 54605
+Soil Moisture = 17
+Dry soil! turning PUMP ON
+Time = 54605
+Door State = Opened
+Time = 54637
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 54732
+Light intensity = 470.00
+Time = 55774
+Soil Moisture = 328
+Dry soil! turning PUMP ON
+Time = 55774
+Door State = Opened
+Time = 55806
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 55902
+Light intensity = 468.00
+Time = 56944
+Soil Moisture = 18
+Dry soil! turning PUMP ON
+Time = 56944
+Door State = Opened
+Time = 56976
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 57071
+Light intensity = 473.00
+Time = 58113
+Soil Moisture = 886
+Time = 58113
+Door State = Opened
+Time = 58118
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 58213
+Light intensity = 472.00
+Time = 59255
+Soil Moisture = 886
+Time = 59255
+Door State = Opened
+Time = 59260
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 59356
+Light intensity = 469.00
+Time = 60398
+Soil Moisture = 882
+Time = 60398
+Door State = Opened
+Time = 60403
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 60498
+Light intensity = 469.00
+Time = 61540
+Soil Moisture = 880
+Time = 61540
+Door State = Opened
+Time = 61545
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 61640
+Light intensity = 468.00
+Time = 62682
+Soil Moisture = 878
+Time = 62682
+Door State = Opened
+Time = 62687
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 62782
+Light intensity = 475.00
+Time = 63824
+Soil Moisture = 886
+Time = 63824
+Door State = Opened
+Time = 63830
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 63925
+Light intensity = 464.00
+Time = 64967
+Soil Moisture = 884
+Time = 64967
+Door State = Opened
+Time = 64972
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 65068
+Light intensity = 462.00
+Time = 66110
+Soil Moisture = 882
+Time = 66110
+Door State = Opened
+Time = 66115
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 66210
+Light intensity = 480.00
+Time = 67252
+Soil Moisture = 887
+Time = 67252
+Door State = Opened
+Time = 67257
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 67352
+Light intensity = 479.00
+Time = 68395
+Soil Moisture = 878
+Time = 68395
+Door State = Opened
+Time = 68400
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 68495
+Light intensity = 481.00
+Time = 69537
+Soil Moisture = 879
+Time = 69537
+Door State = Opened
+Time = 69542
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 69638
+Light intensity = 481.00
+Time = 70680
+Soil Moisture = 853
+Time = 70680
+Door State = Opened
+Time = 70685
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 70780
+Light intensity = 480.00
+Time = 71822
+Soil Moisture = 690
+Time = 71822
+Door State = Opened
+Time = 71827
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 71922
+Light intensity = 479.00
+Time = 72964
+Soil Moisture = 873
+Time = 72964
+Door State = Opened
+Time = 72969
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 73064
+Light intensity = 479.00
+Time = 74106
+Soil Moisture = 875
+Time = 74106
+Door State = Opened
+Time = 74112
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 74207
+Light intensity = 481.00
+Time = 75249
+Soil Moisture = 874
+Time = 75249
+Door State = Opened
+Time = 75254
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 75350
+Light intensity = 481.00
+Time = 76392
+Soil Moisture = 887
+Time = 76392
+Door State = Opened
+Time = 76397
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 76492
+Light intensity = 479.00
+Time = 77534
+Soil Moisture = 878
+Time = 77534
+Door State = Opened
+Time = 77539
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 77634
+Light intensity = 479.00
+Time = 78676
+Soil Moisture = 888
+Time = 78676
+Door State = Opened
+Time = 78682
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 78777
+Light intensity = 481.00
+Time = 79819
+Soil Moisture = 888
+Time = 79819
+Door State = Opened
+Time = 79824
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 79920
+Light intensity = 481.00
+Time = 80962
+Soil Moisture = 883
+Time = 80962
+Door State = Opened
+Time = 80967
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 81062
+Light intensity = 480.00
+Time = 82104
+Soil Moisture = 312
+Dry soil! turning PUMP ON
+Time = 82104
+Door State = Opened
+Time = 82137
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 82232
+Light intensity = 480.00
+Time = 83274
+Soil Moisture = 488
+Dry soil! turning PUMP ON
+Time = 83274
+Door State = Opened
+Time = 83307
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 83402
+Light intensity = 478.00
+Time = 84444
+Soil Moisture = 890
+Time = 84444
+Door State = Opened
+Time = 84449
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 84544
+Light intensity = 479.00
+Time = 85586
+Soil Moisture = 320
+Dry soil! turning PUMP ON
+Time = 85586
+Door State = Opened
+Time = 85619
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 85714
+Light intensity = 480.00
+Time = 86756
+Soil Moisture = 880
+Time = 86756
+Door State = Opened
+Time = 86761
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 86856
+Light intensity = 480.00
+Time = 87898
+Soil Moisture = 884
+Time = 87898
+Door State = Opened
+Time = 87903
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 87998
+Light intensity = 479.00
+Time = 89040
+Soil Moisture = 880
+Time = 89040
+Door State = Opened
+Time = 89046
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 89141
+Light intensity = 480.00
+Time = 90183
+Soil Moisture = 878
+Time = 90183
+Door State = Opened
+Time = 90188
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 90284
+Light intensity = 481.00
+Time = 91326
+Soil Moisture = 83
+Dry soil! turning PUMP ON
+Time = 91326
+Door State = Opened
+Time = 91358
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 91453
+Light intensity = 478.00
+Time = 92495
+Soil Moisture = 66
+Dry soil! turning PUMP ON
+Time = 92495
+Door State = Opened
+Time = 92527
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 92622
+Light intensity = 480.00
+Time = 93664
+Soil Moisture = 888
+Time = 93664
+Door State = Opened
+Time = 93669
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 93764
+Light intensity = 480.00
+Time = 94806
+Soil Moisture = 882
+Time = 94806
+Door State = Opened
+Time = 94811
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 94906
+Light intensity = 480.00
+Time = 95948
+Soil Moisture = 882
+Time = 95948
+Door State = Opened
+Time = 95953
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 96049
+Light intensity = 478.00
+Time = 97091
+Soil Moisture = 886
+Time = 97091
+Door State = Opened
+Time = 97096
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 97191
+Light intensity = 480.00
+Time = 98233
+Soil Moisture = 327
+Dry soil! turning PUMP ON
+Time = 98233
+Door State = Opened
+Time = 98266
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 98361
+Light intensity = 478.00
+Time = 99403
+Soil Moisture = 370
+Dry soil! turning PUMP ON
+Time = 99403
+Door State = Opened
+Time = 99436
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 99531
+Light intensity = 480.00
+Time = 100573
+Soil Moisture = 442
+Dry soil! turning PUMP ON
+Time = 100573
+Door State = Opened
+Time = 100608
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 100705
+Light intensity = 481.00
+Time = 101747
+Soil Moisture = 523
+Dry soil! turning PUMP ON
+Time = 101747
+Door State = Opened
+Time = 101782
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 101879
+Light intensity = 480.00
+Time = 102921
+Soil Moisture = 515
+Dry soil! turning PUMP ON
+Time = 102921
+Door State = Opened
+Time = 102956
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 103053
+Light intensity = 482.00
+Time = 104095
+Soil Moisture = 655
+Time = 104095
+Door State = Opened
+Time = 104102
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 104199
+Light intensity = 482.00
+Time = 105242
+Soil Moisture = 796
+Time = 105242
+Door State = Opened
+Time = 105249
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 105346
+Light intensity = 465.00
+Time = 106389
+Soil Moisture = 777
+Time = 106389
+Door State = Opened
+Time = 106396
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 106492
+Light intensity = 474.00
+Time = 107535
+Soil Moisture = 882
+Time = 107535
+Door State = Opened
+Time = 107542
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 107638
+Light intensity = 476.00
+Time = 108681
+Soil Moisture = 620
+Dry soil! turning PUMP ON
+Time = 108681
+Door State = Opened
+Time = 108716
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 108813
+Light intensity = 482.00
+Time = 109855
+Soil Moisture = 983
+Time = 109855
+Door State = Opened
+Time = 109862
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 109959
+Light intensity = 460.00
+Time = 111002
+Soil Moisture = 887
+Time = 111002
+Door State = Opened
+Time = 111009
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 111106
+Light intensity = 465.00
+Time = 112149
+Soil Moisture = 746
+Time = 112149
+Door State = Opened
+Time = 112156
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 112252
+Light intensity = 463.00
+Time = 113295
+Soil Moisture = 736
+Time = 113295
+Door State = Opened
+Time = 113302
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 113398
+Light intensity = 396.00
+Time = 114441
+Soil Moisture = 685
+Time = 114441
+Door State = Opened
+Time = 114448
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 114544
+Light intensity = 366.00
+Night Time! turning LIGHTS ON
+Time = 115619
+Soil Moisture = 609
+Dry soil! turning PUMP ON
+Time = 115619
+Door State = Opened
+Time = 115654
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 115751
+Light intensity = 374.00
+Night Time! turning LIGHTS ON
+Time = 116826
+Soil Moisture = 570
+Dry soil! turning PUMP ON
+Time = 116826
+Door State = Opened
+Time = 116860
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 116958
+Light intensity = 272.00
+Night Time! turning LIGHTS ON
+Time = 118032
+Soil Moisture = 534
+Dry soil! turning PUMP ON
+Time = 118032
+Door State = Opened
+Time = 118067
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 118164
+Light intensity = 232.00
+Night Time! turning LIGHTS ON
+Time = 119239
+Soil Moisture = 464
+Dry soil! turning PUMP ON
+Time = 119239
+Door State = Opened
+Time = 119274
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 119371
+Light intensity = 478.00
+Time = 120413
+Soil Moisture = 497
+Dry soil! turning PUMP ON
+Time = 120413
+Door State = Opened
+Time = 120448
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 120545
+Light intensity = 486.00
+Time = 121587
+Soil Moisture = 474
+Dry soil! turning PUMP ON
+Time = 121587
+Door State = Opened
+Time = 121622
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 121719
+Light intensity = 489.00
+Time = 122761
+Soil Moisture = 615
+Dry soil! turning PUMP ON
+Time = 122761
+Door State = Opened
+Time = 122796
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 122893
+Light intensity = 459.00
+Time = 123935
+Soil Moisture = 715
+Time = 123935
+Door State = Opened
+Time = 123942
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 124039
+Light intensity = 395.00
+Time = 125082
+Soil Moisture = 470
+Dry soil! turning PUMP ON
+Time = 125082
+Door State = Opened
+Time = 125117
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 125214
+Light intensity = 491.00
+Time = 126256
+Soil Moisture = 505
+Dry soil! turning PUMP ON
+Time = 126256
+Door State = Opened
+Time = 126290
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 126388
+Light intensity = 494.00
+Time = 127430
+Soil Moisture = 593
+Dry soil! turning PUMP ON
+Time = 127430
+Door State = Opened
+Time = 127465
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 127562
+Light intensity = 494.00
+Time = 128604
+Soil Moisture = 583
+Dry soil! turning PUMP ON
+Time = 128604
+Door State = Opened
+Time = 128638
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 128736
+Light intensity = 495.00
+Time = 129778
+Soil Moisture = 543
+Dry soil! turning PUMP ON
+Time = 129778
+Door State = Opened
+Time = 129813
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 129910
+Light intensity = 495.00
+Time = 130952
+Soil Moisture = 495
+Dry soil! turning PUMP ON
+Time = 130952
+Door State = Opened
+Time = 130987
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 131084
+Light intensity = 494.00
+Time = 132126
+Soil Moisture = 547
+Dry soil! turning PUMP ON
+Time = 132126
+Door State = Opened
+Time = 132161
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 132258
+Light intensity = 492.00
+Time = 133300
+Soil Moisture = 552
+Dry soil! turning PUMP ON
+Time = 133300
+Door State = Opened
+Time = 133335
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 133432
+Light intensity = 492.00
+Time = 134474
+Soil Moisture = 556
+Dry soil! turning PUMP ON
+Time = 134474
+Door State = Opened
+Time = 134509
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 134606
+Light intensity = 492.00
+Time = 135648
+Soil Moisture = 769
+Time = 135648
+Door State = Opened
+Time = 135655
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 135751
+Light intensity = 478.00
+Time = 136794
+Soil Moisture = 567
+Dry soil! turning PUMP ON
+Time = 136794
+Door State = Opened
+Time = 136828
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 136926
+Light intensity = 310.00
+Night Time! turning LIGHTS ON
+Time = 138000
+Soil Moisture = 648
+Time = 138000
+Door State = Opened
+Time = 138007
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 138103
+Light intensity = 197.00
+Night Time! turning LIGHTS ON
+Time = 139179
+Soil Moisture = 561
+Dry soil! turning PUMP ON
+Time = 139179
+Door State = Opened
+Time = 139213
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 139311
+Light intensity = 118.00
+Night Time! turning LIGHTS ON
+Time = 140385
+Soil Moisture = 487
+Dry soil! turning PUMP ON
+Time = 140385
+Door State = Opened
+Time = 140420
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 140517
+Light intensity = 119.00
+Night Time! turning LIGHTS ON
+Time = 141592
+Soil Moisture = 472
+Dry soil! turning PUMP ON
+Time = 141592
+Door State = Opened
+Time = 141627
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 141724
+Light intensity = 113.00
+Night Time! turning LIGHTS ON
+Time = 142799
+Soil Moisture = 346
+Dry soil! turning PUMP ON
+Time = 142799
+Door State = Opened
+Time = 142834
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 142931
+Light intensity = 464.00
+Time = 143973
+Soil Moisture = 467
+Dry soil! turning PUMP ON
+Time = 143973
+Door State = Opened
+Time = 144008
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 144105
+Light intensity = 487.00
+Time = 145147
+Soil Moisture = 499
+Dry soil! turning PUMP ON
+Time = 145147
+Door State = Opened
+Time = 145182
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 145280
+Light intensity = 483.00
+Time = 146321
+Soil Moisture = 543
+Dry soil! turning PUMP ON
+Time = 146321
+Door State = Opened
+Time = 146356
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 146453
+Light intensity = 480.00
+Time = 147495
+Soil Moisture = 518
+Dry soil! turning PUMP ON
+Time = 147495
+Door State = Opened
+Time = 147530
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 147628
+Light intensity = 482.00
+Time = 148670
+Soil Moisture = 552
+Dry soil! turning PUMP ON
+Time = 148670
+Door State = Opened
+Time = 148705
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 148802
+Light intensity = 482.00
+Time = 149844
+Soil Moisture = 576
+Dry soil! turning PUMP ON
+Time = 149844
+Door State = Opened
+Time = 149879
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 149977
+Light intensity = 482.00
+Time = 151019
+Soil Moisture = 592
+Dry soil! turning PUMP ON
+Time = 151019
+Door State = Opened
+Time = 151054
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 151151
+Light intensity = 482.00
+Time = 152193
+Soil Moisture = 597
+Dry soil! turning PUMP ON
+Time = 152193
+Door State = Opened
+Time = 152227
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 152325
+Light intensity = 483.00
+Time = 153367
+Soil Moisture = 576
+Dry soil! turning PUMP ON
+Time = 153367
+Door State = Opened
+Time = 153402
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 153499
+Light intensity = 483.00
+Time = 154541
+Soil Moisture = 611
+Dry soil! turning PUMP ON
+Time = 154541
+Door State = Opened
+Time = 154575
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 154673
+Light intensity = 483.00
+Time = 155715
+Soil Moisture = 591
+Dry soil! turning PUMP ON
+Time = 155715
+Door State = Opened
+Time = 155750
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 155847
+Light intensity = 484.00
+Time = 156889
+Soil Moisture = 628
+Time = 156889
+Door State = Opened
+Time = 156896
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 156992
+Light intensity = 482.00
+Time = 158035
+Soil Moisture = 628
+Time = 158035
+Door State = Opened
+Time = 158043
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 158139
+Light intensity = 483.00
+Time = 159182
+Soil Moisture = 629
+Time = 159182
+Door State = Opened
+Time = 159190
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 159286
+Light intensity = 484.00
+Time = 160329
+Soil Moisture = 616
+Dry soil! turning PUMP ON
+Time = 160329
+Door State = Opened
+Time = 160364
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 160461
+Light intensity = 482.00
+Time = 161503
+Soil Moisture = 609
+Dry soil! turning PUMP ON
+Time = 161503
+Door State = Opened
+Time = 161538
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 161635
+Light intensity = 482.00
+Time = 162677
+Soil Moisture = 632
+Time = 162677
+Door State = Opened
+Time = 162684
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 162781
+Light intensity = 482.00
+Time = 163824
+Soil Moisture = 629
+Time = 163824
+Door State = Opened
+Time = 163831
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 163928
+Light intensity = 483.00
+Time = 164971
+Soil Moisture = 627
+Time = 164971
+Door State = Opened
+Time = 164978
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 165074
+Light intensity = 483.00
+Time = 166117
+Soil Moisture = 606
+Dry soil! turning PUMP ON
+Time = 166117
+Door State = Opened
+Time = 166152
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 166249
+Light intensity = 483.00
+Time = 167291
+Soil Moisture = 625
+Dry soil! turning PUMP ON
+Time = 167291
+Door State = Opened
+Time = 167326
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 167424
+Light intensity = 482.00
+Time = 168465
+Soil Moisture = 618
+Dry soil! turning PUMP ON
+Time = 168465
+Door State = Opened
+Time = 168500
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 168597
+Light intensity = 482.00
+Time = 169639
+Soil Moisture = 615
+Dry soil! turning PUMP ON
+Time = 169639
+Door State = Opened
+Time = 169674
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 169772
+Light intensity = 482.00
+Time = 170814
+Soil Moisture = 634
+Time = 170814
+Door State = Opened
+Time = 170821
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 170917
+Light intensity = 483.00
+Time = 171960
+Soil Moisture = 621
+Dry soil! turning PUMP ON
+Time = 171960
+Door State = Opened
+Time = 171995
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 172092
+Light intensity = 482.00
+Time = 173134
+Soil Moisture = 607
+Dry soil! turning PUMP ON
+Time = 173134
+Door State = Opened
+Time = 173169
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 173266
+Light intensity = 473.00
+Time = 174308
+Soil Moisture = 662
+Time = 174308
+Door State = Opened
+Time = 174315
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 174411
+Light intensity = 234.00
+Night Time! turning LIGHTS ON
+Time = 175486
+Soil Moisture = 615
+Dry soil! turning PUMP ON
+Time = 175486
+Door State = Opened
+Time = 175521
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 175619
+Light intensity = 136.00
+Night Time! turning LIGHTS ON
+Time = 176693
+Soil Moisture = 595
+Dry soil! turning PUMP ON
+Time = 176693
+Door State = Opened
+Time = 176728
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 176825
+Light intensity = 141.00
+Night Time! turning LIGHTS ON
+Time = 177900
+Soil Moisture = 540
+Dry soil! turning PUMP ON
+Time = 177900
+Door State = Opened
+Time = 177935
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 178032
+Light intensity = 142.00
+Night Time! turning LIGHTS ON
+Time = 179107
+Soil Moisture = 525
+Dry soil! turning PUMP ON
+Time = 179107
+Door State = Opened
+Time = 179142
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 179239
+Light intensity = 142.00
+Night Time! turning LIGHTS ON
+Time = 180314
+Soil Moisture = 487
+Dry soil! turning PUMP ON
+Time = 180314
+Door State = Opened
+Time = 180348
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 180446
+Light intensity = 131.00
+Night Time! turning LIGHTS ON
+Time = 181520
+Soil Moisture = 483
+Dry soil! turning PUMP ON
+Time = 181520
+Door State = Opened
+Time = 181555
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 181652
+Light intensity = 145.00
+Night Time! turning LIGHTS ON
+Time = 182727
+Soil Moisture = 456
+Dry soil! turning PUMP ON
+Time = 182727
+Door State = Opened
+Time = 182762
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 182859
+Light intensity = 129.00
+Night Time! turning LIGHTS ON
+Time = 183934
+Soil Moisture = 449
+Dry soil! turning PUMP ON
+Time = 183934
+Door State = Opened
+Time = 183969
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 184067
+Light intensity = 120.00
+Night Time! turning LIGHTS ON
+Time = 185141
+Soil Moisture = 439
+Dry soil! turning PUMP ON
+Time = 185141
+Door State = Opened
+Time = 185176
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 185273
+Light intensity = 123.00
+Night Time! turning LIGHTS ON
+Time = 186348
+Soil Moisture = 411
+Dry soil! turning PUMP ON
+Time = 186348
+Door State = Opened
+Time = 186383
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 186480
+Light intensity = 427.00
+Time = 187522
+Soil Moisture = 514
+Dry soil! turning PUMP ON
+Time = 187522
+Door State = Opened
+Time = 187556
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 187654
+Light intensity = 468.00
+Time = 188696
+Soil Moisture = 304
+Dry soil! turning PUMP ON
+Time = 188696
+Door State = Opened
+Time = 188731
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 188828
+Light intensity = 460.00
+Time = 189870
+Soil Moisture = 354
+Dry soil! turning PUMP ON
+Time = 189870
+Door State = Opened
+Time = 189904
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 190002
+Light intensity = 433.00
+Time = 191044
+Soil Moisture = 416
+Dry soil! turning PUMP ON
+Time = 191044
+Door State = Closed
+Time = 191079
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 191176
+Light intensity = 444.00
+Time = 192218
+Soil Moisture = 512
+Dry soil! turning PUMP ON
+Time = 192218
+Door State = Closed
+Time = 192252
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 192350
+Light intensity = 441.00
+Time = 193392
+Soil Moisture = 522
+Dry soil! turning PUMP ON
+Time = 193392
+Door State = Closed
+Time = 193427
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 193524
+Light intensity = 440.00
+Time = 194566
+Soil Moisture = 600
+Dry soil! turning PUMP ON
+Time = 194566
+Door State = Closed
+Time = 194600
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 194698
+Light intensity = 439.00
+Time = 195740
+Soil Moisture = 605
+Dry soil! turning PUMP ON
+Time = 195740
+Door State = Closed
+Time = 195775
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 195872
+Light intensity = 436.00
+Time = 196914
+Soil Moisture = 639
+Time = 196914
+Door State = Closed
+Time = 196921
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 197017
+Light intensity = 438.00
+Time = 198060
+Soil Moisture = 681
+Time = 198060
+Door State = Opened
+Time = 198067
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 198163
+Light intensity = 429.00
+Time = 199206
+Soil Moisture = 717
+Time = 199206
+Door State = Opened
+Time = 199214
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 199310
+Light intensity = 433.00
+Time = 200353
+Soil Moisture = 676
+Time = 200353
+Door State = Closed
+Time = 200360
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 200457
+Light intensity = 440.00
+Time = 201500
+Soil Moisture = 589
+Dry soil! turning PUMP ON
+Time = 201500
+Door State = Closed
+Time = 201535
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 201632
+Light intensity = 453.00
+Time = 202674
+Soil Moisture = 531
+Dry soil! turning PUMP ON
+Time = 202674
+Door State = Closed
+Time = 202708
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 202806
+Light intensity = 455.00
+Time = 203848
+Soil Moisture = 314
+Dry soil! turning PUMP ON
+Time = 203848
+Door State = Closed
+Time = 203883
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 203980
+Light intensity = 457.00
+Time = 205022
+Soil Moisture = 494
+Dry soil! turning PUMP ON
+Time = 205022
+Door State = Closed
+Time = 205057
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 205154
+Light intensity = 455.00
+Time = 206196
+Soil Moisture = 414
+Dry soil! turning PUMP ON
+Time = 206196
+Door State = Closed
+Time = 206231
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 206328
+Light intensity = 449.00
+Time = 207370
+Soil Moisture = 607
+Dry soil! turning PUMP ON
+Time = 207370
+Door State = Closed
+Time = 207405
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 207502
+Light intensity = 442.00
+Time = 208544
+Soil Moisture = 603
+Dry soil! turning PUMP ON
+Time = 208544
+Door State = Closed
+Time = 208579
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 208676
+Light intensity = 442.00
+Time = 209718
+Soil Moisture = 426
+Dry soil! turning PUMP ON
+Time = 209718
+Door State = Closed
+Time = 209753
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 209850
+Light intensity = 441.00
+Time = 210892
+Soil Moisture = 705
+Time = 210892
+Door State = Opened
+Time = 210899
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 210996
+Light intensity = 423.00
+Time = 212039
+Soil Moisture = 875
+Time = 212039
+Door State = Opened
+Time = 212046
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 212143
+Light intensity = 423.00
+Time = 213186
+Soil Moisture = 765
+Time = 213186
+Door State = Opened
+Time = 213193
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 213289
+Light intensity = 420.00
+Time = 214332
+Soil Moisture = 700
+Time = 214332
+Door State = Opened
+Time = 214339
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 214435
+Light intensity = 421.00
+Time = 215478
+Soil Moisture = 503
+Dry soil! turning PUMP ON
+Time = 215478
+Door State = Opened
+Time = 215513
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 215610
+Light intensity = 443.00
+Time = 216652
+Soil Moisture = 764
+Time = 216652
+Door State = Closed
+Time = 216659
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 216756
+Light intensity = 440.00
+Time = 217799
+Soil Moisture = 726
+Time = 217799
+Door State = Closed
+Time = 217806
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 217903
+Light intensity = 438.00
+Time = 218946
+Soil Moisture = 706
+Time = 218946
+Door State = Closed
+Time = 218953
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 219049
+Light intensity = 437.00
+Time = 220092
+Soil Moisture = 623
+Dry soil! turning PUMP ON
+Time = 220092
+Door State = Closed
+Time = 220127
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 220224
+Light intensity = 439.00
+Time = 221266
+Soil Moisture = 570
+Dry soil! turning PUMP ON
+Time = 221266
+Door State = Closed
+Time = 221301
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 221399
+Light intensity = 439.00
+Time = 222441
+Soil Moisture = 652
+Time = 222441
+Door State = Closed
+Time = 222448
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 222544
+Light intensity = 438.00
+Time = 223587
+Soil Moisture = 636
+Time = 223587
+Door State = Closed
+Time = 223594
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 223690
+Light intensity = 439.00
+Time = 224733
+Soil Moisture = 573
+Dry soil! turning PUMP ON
+Time = 224733
+Door State = Closed
+Time = 224768
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 224865
+Light intensity = 438.00
+Time = 225907
+Soil Moisture = 555
+Dry soil! turning PUMP ON
+Time = 225907
+Door State = Closed
+Time = 225942
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 226039
+Light intensity = 435.00
+Time = 227081
+Soil Moisture = 561
+Dry soil! turning PUMP ON
+Time = 227081
+Door State = Closed
+Time = 227116
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 227213
+Light intensity = 453.00
+Time = 228255
+Soil Moisture = 766
+Time = 228255
+Door State = Opened
+Time = 228262
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 228359
+Light intensity = 447.00
+Time = 229402
+Soil Moisture = 953
+Time = 229402
+Door State = Opened
+Time = 229409
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 229506
+Light intensity = 459.00
+Time = 230549
+Soil Moisture = 991
+Time = 230549
+Door State = Opened
+Time = 230556
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 230652
+Light intensity = 471.00
+Time = 231695
+Soil Moisture = 926
+Time = 231695
+Door State = Opened
+Time = 231702
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 231798
+Light intensity = 487.00
+Time = 232841
+Soil Moisture = 675
+Time = 232841
+Door State = Opened
+Time = 232848
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 232944
+Light intensity = 493.00
+Time = 233987
+Soil Moisture = 755
+Time = 233987
+Door State = Opened
+Time = 233994
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 234090
+Light intensity = 495.00
+Time = 235133
+Soil Moisture = 529
+Dry soil! turning PUMP ON
+Time = 235133
+Door State = Opened
+Time = 235168
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 235266
+Light intensity = 495.00
+Time = 236308
+Soil Moisture = 690
+Time = 236308
+Door State = Opened
+Time = 236315
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 236411
+Light intensity = 465.00
+Time = 237454
+Soil Moisture = 715
+Time = 237454
+Door State = Opened
+Time = 237461
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 237557
+Light intensity = 453.00
+Time = 238600
+Soil Moisture = 560
+Dry soil! turning PUMP ON
+Time = 238600
+Door State = Closed
+Time = 238635
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 238732
+Light intensity = 455.00
+Time = 239774
+Soil Moisture = 553
+Dry soil! turning PUMP ON
+Time = 239774
+Door State = Closed
+Time = 239809
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 239906
+Light intensity = 455.00
+Time = 240948
+Soil Moisture = 544
+Dry soil! turning PUMP ON
+Time = 240948
+Door State = Closed
+Time = 240983
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 241080
+Light intensity = 456.00
+Time = 242122
+Soil Moisture = 319
+Dry soil! turning PUMP ON
+Time = 242122
+Door State = Closed
+Time = 242157
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 242254
+Light intensity = 458.00
+Time = 243296
+Soil Moisture = 310
+Dry soil! turning PUMP ON
+Time = 243296
+Door State = Closed
+Time = 243331
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 243428
+Light intensity = 459.00
+Time = 244470
+Soil Moisture = 411
+Dry soil! turning PUMP ON
+Time = 244470
+Door State = Closed
+Time = 244505
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 244602
+Light intensity = 460.00
+Time = 245644
+Soil Moisture = 483
+Dry soil! turning PUMP ON
+Time = 245644
+Door State = Closed
+Time = 245679
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 245776
+Light intensity = 460.00
+Time = 246818
+Soil Moisture = 482
+Dry soil! turning PUMP ON
+Time = 246818
+Door State = Closed
+Time = 246853
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 246950
+Light intensity = 459.00
+Time = 247992
+Soil Moisture = 516
+Dry soil! turning PUMP ON
+Time = 247992
+Door State = Closed
+Time = 248027
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 248124
+Light intensity = 459.00
+Time = 249166
+Soil Moisture = 511
+Dry soil! turning PUMP ON
+Time = 249166
+Door State = Closed
+Time = 249201
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 249298
+Light intensity = 458.00
+Time = 250340
+Soil Moisture = 537
+Dry soil! turning PUMP ON
+Time = 250340
+Door State = Closed
+Time = 250375
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 250472
+Light intensity = 458.00
+Time = 251514
+Soil Moisture = 554
+Dry soil! turning PUMP ON
+Time = 251514
+Door State = Closed
+Time = 251549
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 251646
+Light intensity = 457.00
+Time = 252688
+Soil Moisture = 533
+Dry soil! turning PUMP ON
+Time = 252688
+Door State = Closed
+Time = 252723
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 252820
+Light intensity = 465.00
+Time = 253862
+Soil Moisture = 573
+Dry soil! turning PUMP ON
+Time = 253862
+Door State = Closed
+Time = 253897
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 253995
+Light intensity = 465.00
+Time = 255036
+Soil Moisture = 547
+Dry soil! turning PUMP ON
+Time = 255036
+Door State = Closed
+Time = 255071
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 255168
+Light intensity = 466.00
+Time = 256210
+Soil Moisture = 585
+Dry soil! turning PUMP ON
+Time = 256210
+Door State = Closed
+Time = 256245
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 256343
+Light intensity = 466.00
+Time = 257385
+Soil Moisture = 580
+Dry soil! turning PUMP ON
+Time = 257385
+Door State = Closed
+Time = 257420
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 257517
+Light intensity = 466.00
+Time = 258560
+Soil Moisture = 610
+Dry soil! turning PUMP ON
+Time = 258560
+Door State = Closed
+Time = 258594
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 258692
+Light intensity = 466.00
+Time = 259734
+Soil Moisture = 594
+Dry soil! turning PUMP ON
+Time = 259734
+Door State = Closed
+Time = 259769
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 259866
+Light intensity = 465.00
+Time = 260908
+Soil Moisture = 591
+Dry soil! turning PUMP ON
+Time = 260908
+Door State = Closed
+Time = 260942
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 261040
+Light intensity = 465.00
+Time = 262082
+Soil Moisture = 603
+Dry soil! turning PUMP ON
+Time = 262082
+Door State = Closed
+Time = 262117
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 262214
+Light intensity = 465.00
+Time = 263256
+Soil Moisture = 551
+Dry soil! turning PUMP ON
+Time = 263256
+Door State = Closed
+Time = 263290
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 263388
+Light intensity = 465.00
+Time = 264430
+Soil Moisture = 562
+Dry soil! turning PUMP ON
+Time = 264430
+Door State = Closed
+Time = 264465
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 264562
+Light intensity = 465.00
+Time = 265604
+Soil Moisture = 511
+Dry soil! turning PUMP ON
+Time = 265604
+Door State = Closed
+Time = 265638
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 265736
+Light intensity = 460.00
+Time = 266778
+Soil Moisture = 681
+Time = 266778
+Door State = Closed
+Time = 266785
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 266882
+Light intensity = 461.00
+Time = 267925
+Soil Moisture = 688
+Time = 267925
+Door State = Closed
+Time = 267932
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 268028
+Light intensity = 462.00
+Time = 269071
+Soil Moisture = 694
+Time = 269071
+Door State = Closed
+Time = 269078
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 269174
+Light intensity = 462.00
+Time = 270217
+Soil Moisture = 644
+Time = 270217
+Door State = Closed
+Time = 270224
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 270320
+Light intensity = 461.00
+Time = 271363
+Soil Moisture = 552
+Dry soil! turning PUMP ON
+Time = 271363
+Door State = Closed
+Time = 271397
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 271495
+Light intensity = 461.00
+Time = 272537
+Soil Moisture = 688
+Time = 272537
+Door State = Closed
+Time = 272544
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 272641
+Light intensity = 463.00
+Time = 273684
+Soil Moisture = 828
+Time = 273684
+Door State = Closed
+Time = 273691
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 273787
+Light intensity = 450.00
+Time = 274830
+Soil Moisture = 657
+Time = 274830
+Door State = Closed
+Time = 274837
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 274933
+Light intensity = 456.00
+Time = 275976
+Soil Moisture = 562
+Dry soil! turning PUMP ON
+Time = 275976
+Door State = Closed
+Time = 276011
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 276108
+Light intensity = 466.00
+Time = 277150
+Soil Moisture = 707
+Time = 277150
+Door State = Closed
+Time = 277157
+Humidity (%) = 15.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 277254
+Light intensity = 468.00
+Time = 278297
+Soil Moisture = 640
+Time = 278297
+Door State = Closed
+Time = 278304
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 278401
+Light intensity = 468.00
+Time = 279444
+Soil Moisture = 770
+Time = 279444
+Door State = Closed
+Time = 279451
+Humidity (%) = 16.00
+DHT_Temperature  (C) = 24.00
+Too hot! turning FANS ON
+Time = 279547
+Light intensity = 467.00

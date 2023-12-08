@@ -1,0 +1,3212 @@
+ght intensity = 354.00
+Night Time! turning LIGHTS ON
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 297384
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Watchdog Demo Starting
+Time = 4000
+Soil Moisture = 26
+Dry soil! turning PUMP ON
+Time = 4000
+Door State = Closed
+Time = 4030
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 4124
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 5198
+Soil Moisture = 118
+Dry soil! turning PUMP ON
+Time = 5198
+Door State = Closed
+Time = 5229
+Humidity (%) = 34.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 5323
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 6397
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 6397
+Door State = Closed
+Time = 6427
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 6521
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 7595
+Soil Moisture = 12
+Dry soil! turning PUMP ON
+Time = 7595
+Door State = Closed
+Time = 7624
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 7718
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 8792
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 8792
+Door State = Closed
+Time = 8821
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 8915
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 9989
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 9989
+Door State = Closed
+Time = 10018
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 10114
+Light intensity = 353.00
+Night Time! turning LIGHTS ON
+Time = 11188
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 11188
+Door State = Closed
+Time = 11219
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 11315
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 12389
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 12389
+Door State = Closed
+Time = 12421
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 12516
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 13591
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 13591
+Door State = Closed
+Time = 13623
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 13718
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 14793
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 14793
+Door State = Closed
+Time = 14825
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 14920
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 15995
+Soil Moisture = 16
+Dry soil! turning PUMP ON
+Time = 15995
+Door State = Closed
+Time = 16027
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 16122
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 17197
+Soil Moisture = 118
+Dry soil! turning PUMP ON
+Time = 17197
+Door State = Closed
+Time = 17229
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 17325
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 18399
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 18399
+Door State = Closed
+Time = 18430
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 18526
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 19600
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 19600
+Door State = Closed
+Time = 19632
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 19727
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 20802
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 20802
+Door State = Closed
+Time = 20834
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 20929
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 22004
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 22004
+Door State = Closed
+Time = 22036
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 22131
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 23206
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 23206
+Door State = Closed
+Time = 23238
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 23333
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 24408
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 24408
+Door State = Closed
+Time = 24439
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 24535
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 25609
+Soil Moisture = 17
+Dry soil! turning PUMP ON
+Time = 25609
+Door State = Closed
+Time = 25640
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 25736
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 26810
+Soil Moisture = 18
+Dry soil! turning PUMP ON
+Time = 26810
+Door State = Closed
+Time = 26842
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 26937
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 28012
+Soil Moisture = 19
+Dry soil! turning PUMP ON
+Time = 28012
+Door State = Closed
+Time = 28044
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 28139
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 29214
+Soil Moisture = 18
+Dry soil! turning PUMP ON
+Time = 29214
+Door State = Closed
+Time = 29246
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 29341
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 30416
+Soil Moisture = 20
+Dry soil! turning PUMP ON
+Time = 30416
+Door State = Closed
+Time = 30448
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 30543
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 31618
+Soil Moisture = 19
+Dry soil! turning PUMP ON
+Time = 31618
+Door State = Closed
+Time = 31649
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 31745
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 32819
+Soil Moisture = 19
+Dry soil! turning PUMP ON
+Time = 32819
+Door State = Closed
+Time = 32850
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 32946
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 34020
+Soil Moisture = 17
+Dry soil! turning PUMP ON
+Time = 34020
+Door State = Closed
+Time = 34052
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 34147
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 35222
+Soil Moisture = 16
+Dry soil! turning PUMP ON
+Time = 35222
+Door State = Closed
+Time = 35254
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 35349
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 36424
+Soil Moisture = 16
+Dry soil! turning PUMP ON
+Time = 36424
+Door State = Closed
+Time = 36456
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 36551
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 37626
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 37626
+Door State = Closed
+Time = 37658
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 37753
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 38828
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 38828
+Door State = Closed
+Time = 38859
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 38955
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 40029
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 40029
+Door State = Closed
+Time = 40060
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 40156
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 41230
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 41230
+Door State = Closed
+Time = 41262
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 41357
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 42432
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 42432
+Door State = Closed
+Time = 42464
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 42559
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 43634
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 43634
+Door State = Closed
+Time = 43666
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 43761
+Light intensity = 353.00
+Night Time! turning LIGHTS ON
+Time = 44836
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 44836
+Door State = Closed
+Time = 44868
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 44963
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 46038
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 46038
+Door State = Closed
+Time = 46069
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 46164
+Light intensity = 353.00
+Night Time! turning LIGHTS ON
+Time = 47239
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 47239
+Door State = Closed
+Time = 47270
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 47366
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 48440
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 48440
+Door State = Closed
+Time = 48472
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 48567
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 49642
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 49642
+Door State = Closed
+Time = 49674
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 49769
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 50844
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 50844
+Door State = Closed
+Time = 50876
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 50971
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 52046
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 52046
+Door State = Closed
+Time = 52078
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 52173
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 53248
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 53248
+Door State = Closed
+Time = 53279
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 53374
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 54449
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 54449
+Door State = Closed
+Time = 54480
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 54576
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 55650
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 55650
+Door State = Closed
+Time = 55682
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 55777
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 56852
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 56852
+Door State = Closed
+Time = 56884
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 56979
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 58054
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 58054
+Door State = Closed
+Time = 58086
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 58181
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 59256
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 59256
+Door State = Closed
+Time = 59288
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 59383
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 60459
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 60459
+Door State = Closed
+Time = 60490
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 60585
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 61660
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 61660
+Door State = Closed
+Time = 61691
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 61787
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 62861
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 62861
+Door State = Closed
+Time = 62893
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 62988
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 64063
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 64063
+Door State = Closed
+Time = 64095
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 64190
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 65265
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 65265
+Door State = Closed
+Time = 65297
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 65392
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 66467
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 66467
+Door State = Closed
+Time = 66499
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 66594
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 67670
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 67670
+Door State = Closed
+Time = 67701
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 67796
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 68871
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 68871
+Door State = Closed
+Time = 68902
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 68998
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 70072
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 70072
+Door State = Closed
+Time = 70104
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 70199
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 71274
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 71274
+Door State = Closed
+Time = 71306
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 71401
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 72476
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 72476
+Door State = Closed
+Time = 72508
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 72603
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 73678
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 73678
+Door State = Closed
+Time = 73710
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 73805
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 74880
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 74880
+Door State = Closed
+Time = 74911
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 75006
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 76081
+Soil Moisture = 19
+Dry soil! turning PUMP ON
+Time = 76081
+Door State = Closed
+Time = 76112
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 76208
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 77282
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 77282
+Door State = Closed
+Time = 77314
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 77409
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 78484
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 78484
+Door State = Closed
+Time = 78516
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 78611
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 79686
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 79686
+Door State = Closed
+Time = 79718
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 79813
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 80888
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 80888
+Door State = Closed
+Time = 80920
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 81015
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 82091
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 82091
+Door State = Closed
+Time = 82122
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 82217
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 83292
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 83292
+Door State = Closed
+Time = 83323
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 83419
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 84493
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 84493
+Door State = Closed
+Time = 84525
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 84620
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 85695
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 85695
+Door State = Closed
+Time = 85727
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 85822
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 86897
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 86897
+Door State = Closed
+Time = 86929
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 87024
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 88099
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 88099
+Door State = Closed
+Time = 88131
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 88226
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 89302
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 89302
+Door State = Closed
+Time = 89333
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 89428
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 90503
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 90503
+Door State = Closed
+Time = 90534
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 90630
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 91704
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 91704
+Door State = Closed
+Time = 91736
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 91831
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 92906
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 92906
+Door State = Closed
+Time = 92938
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 93033
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 94108
+Soil Moisture = 33
+Dry soil! turning PUMP ON
+Time = 94108
+Door State = Closed
+Time = 94140
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 94235
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 95310
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 95310
+Door State = Closed
+Time = 95342
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 95437
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 96512
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 96512
+Door State = Closed
+Time = 96543
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 96638
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 97713
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 97713
+Door State = Closed
+Time = 97744
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 97840
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 98914
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 98914
+Door State = Closed
+Time = 98946
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 99041
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 100116
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 100116
+Door State = Closed
+Time = 100150
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 100247
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 101322
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 101322
+Door State = Closed
+Time = 101356
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 101453
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 102528
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 102528
+Door State = Closed
+Time = 102561
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 102659
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 103733
+Soil Moisture = 23
+Dry soil! turning PUMP ON
+Time = 103733
+Door State = Closed
+Time = 103767
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 103864
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 104939
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 104939
+Door State = Closed
+Time = 104973
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 105070
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 106145
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 106145
+Door State = Closed
+Time = 106179
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 106276
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 107351
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 107351
+Door State = Closed
+Time = 107384
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 107482
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 108556
+Soil Moisture = 12
+Dry soil! turning PUMP ON
+Time = 108556
+Door State = Closed
+Time = 108590
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 108687
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 109762
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 109762
+Door State = Closed
+Time = 109796
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 109893
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 110968
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 110968
+Door State = Closed
+Time = 111002
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 111099
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 112174
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 112174
+Door State = Closed
+Time = 112207
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 112305
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 113379
+Soil Moisture = 113
+Dry soil! turning PUMP ON
+Time = 113379
+Door State = Closed
+Time = 113414
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 113511
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 114586
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 114586
+Door State = Closed
+Time = 114620
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 114717
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 115792
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 115792
+Door State = Closed
+Time = 115826
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 115923
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 116998
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 116998
+Door State = Closed
+Time = 117031
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 117129
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 118203
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 118203
+Door State = Closed
+Time = 118237
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 118334
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 119409
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 119409
+Door State = Closed
+Time = 119443
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 119540
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 120615
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 120615
+Door State = Closed
+Time = 120649
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 120747
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 121821
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 121821
+Door State = Closed
+Time = 121854
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 121952
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 123027
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 123027
+Door State = Closed
+Time = 123061
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 123158
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 124233
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 124233
+Door State = Closed
+Time = 124267
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 124364
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 125440
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 125440
+Door State = Closed
+Time = 125473
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 125571
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 126645
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 126645
+Door State = Closed
+Time = 126679
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 126776
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 127851
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 127851
+Door State = Closed
+Time = 127885
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 127982
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 129057
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 129057
+Door State = Closed
+Time = 129091
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 129188
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 130263
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 130263
+Door State = Closed
+Time = 130296
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 130394
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 131468
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 131468
+Door State = Closed
+Time = 131502
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 131599
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 132674
+Soil Moisture = 12
+Dry soil! turning PUMP ON
+Time = 132674
+Door State = Closed
+Time = 132708
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 132805
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 133880
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 133880
+Door State = Closed
+Time = 133914
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 134011
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 135086
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 135086
+Door State = Closed
+Time = 135119
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 135217
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 136291
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 136291
+Door State = Closed
+Time = 136325
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 136422
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 137497
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 137497
+Door State = Closed
+Time = 137531
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 137628
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 138703
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 138703
+Door State = Closed
+Time = 138737
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 138834
+Light intensity = 353.00
+Night Time! turning LIGHTS ON
+Time = 139909
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 139909
+Door State = Closed
+Time = 139942
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 140040
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 141114
+Soil Moisture = 12
+Dry soil! turning PUMP ON
+Time = 141114
+Door State = Closed
+Time = 141148
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 141245
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 142320
+Soil Moisture = 12
+Dry soil! turning PUMP ON
+Time = 142320
+Door State = Closed
+Time = 142354
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 142451
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 143526
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 143526
+Door State = Closed
+Time = 143560
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 143657
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 144732
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 144732
+Door State = Closed
+Time = 144765
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 144863
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 145937
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 145937
+Door State = Closed
+Time = 145971
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 146068
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 147143
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 147143
+Door State = Closed
+Time = 147177
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 147274
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 148349
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 148349
+Door State = Closed
+Time = 148383
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 148481
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 149555
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 149555
+Door State = Closed
+Time = 149588
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 149686
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 150761
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 150761
+Door State = Closed
+Time = 150795
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 150892
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 151967
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 151967
+Door State = Closed
+Time = 152001
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 152098
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 153174
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 153174
+Door State = Closed
+Time = 153207
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 153305
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 154379
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 154379
+Door State = Closed
+Time = 154413
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 154510
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 155585
+Soil Moisture = 12
+Dry soil! turning PUMP ON
+Time = 155585
+Door State = Closed
+Time = 155619
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 155716
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 156791
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 156791
+Door State = Closed
+Time = 156825
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 156922
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 157997
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 157997
+Door State = Closed
+Time = 158030
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 158128
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 159202
+Soil Moisture = 12
+Dry soil! turning PUMP ON
+Time = 159202
+Door State = Closed
+Time = 159236
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 159333
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 160408
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 160408
+Door State = Closed
+Time = 160442
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 160539
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 161614
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 161614
+Door State = Closed
+Time = 161648
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 161745
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 162820
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 162820
+Door State = Closed
+Time = 162853
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 162951
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 164025
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 164025
+Door State = Closed
+Time = 164059
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 164156
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 165231
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 165231
+Door State = Closed
+Time = 165265
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 165362
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 166437
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 166437
+Door State = Closed
+Time = 166471
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 166568
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 167643
+Soil Moisture = 48
+Dry soil! turning PUMP ON
+Time = 167643
+Door State = Closed
+Time = 167676
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 167774
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 168848
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 168848
+Door State = Closed
+Time = 168882
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 168979
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 170054
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 170054
+Door State = Closed
+Time = 170088
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 170185
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 171260
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 171260
+Door State = Closed
+Time = 171294
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 171392
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 172466
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 172466
+Door State = Closed
+Time = 172499
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 172597
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 173672
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 173672
+Door State = Closed
+Time = 173706
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 173803
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 174878
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 174878
+Door State = Closed
+Time = 174912
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 175009
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 176084
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 176084
+Door State = Closed
+Time = 176118
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 176216
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 177290
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 177290
+Door State = Closed
+Time = 177324
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 177421
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 178496
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 178496
+Door State = Closed
+Time = 178530
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 178627
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 179702
+Soil Moisture = 17
+Dry soil! turning PUMP ON
+Time = 179702
+Door State = Closed
+Time = 179736
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 179833
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 180908
+Soil Moisture = 22
+Dry soil! turning PUMP ON
+Time = 180908
+Door State = Closed
+Time = 180941
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 181039
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 182113
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 182113
+Door State = Closed
+Time = 182147
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 182244
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 183319
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 183319
+Door State = Closed
+Time = 183353
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 183450
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 184525
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 184525
+Door State = Closed
+Time = 184559
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 184656
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 185731
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 185731
+Door State = Closed
+Time = 185764
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 185862
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 186936
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 186936
+Door State = Closed
+Time = 186970
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 187067
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 188142
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 188142
+Door State = Closed
+Time = 188176
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 188273
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 189348
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 189348
+Door State = Closed
+Time = 189382
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 189479
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 190554
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 190554
+Door State = Closed
+Time = 190587
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 190685
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 191759
+Soil Moisture = 107
+Dry soil! turning PUMP ON
+Time = 191759
+Door State = Closed
+Time = 191794
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 191891
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 192966
+Soil Moisture = 127
+Dry soil! turning PUMP ON
+Time = 192966
+Door State = Closed
+Time = 193001
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 193098
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 194173
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 194173
+Door State = Closed
+Time = 194207
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 194305
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 195379
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 195379
+Door State = Closed
+Time = 195412
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 195510
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 196585
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 196585
+Door State = Closed
+Time = 196619
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 196716
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 197791
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 197791
+Door State = Closed
+Time = 197825
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 197922
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 198998
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 198998
+Door State = Closed
+Time = 199031
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 199129
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 200203
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 200203
+Door State = Closed
+Time = 200237
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 200334
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 201409
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 201409
+Door State = Closed
+Time = 201443
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 201540
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 202615
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 202615
+Door State = Closed
+Time = 202649
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 202746
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 203821
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 203821
+Door State = Closed
+Time = 203854
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 203952
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 205026
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 205026
+Door State = Closed
+Time = 205060
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 205157
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 206232
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 206232
+Door State = Closed
+Time = 206266
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 206363
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 207438
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 207438
+Door State = Closed
+Time = 207472
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 207569
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 208644
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 208644
+Door State = Closed
+Time = 208677
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 208775
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 209849
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 209849
+Door State = Closed
+Time = 209883
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 209980
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 211055
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 211055
+Door State = Closed
+Time = 211089
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 211186
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 212261
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 212261
+Door State = Closed
+Time = 212295
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 212392
+Light intensity = 353.00
+Night Time! turning LIGHTS ON
+Time = 213467
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 213467
+Door State = Closed
+Time = 213500
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 213598
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 214672
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 214672
+Door State = Closed
+Time = 214706
+Humidity (%) = 34.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 214803
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 215878
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 215878
+Door State = Closed
+Time = 215912
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 216009
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 217084
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 217084
+Door State = Closed
+Time = 217118
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 217216
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 218290
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 218290
+Door State = Closed
+Time = 218323
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 218421
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 219496
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 219496
+Door State = Closed
+Time = 219530
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 219627
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 220702
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 220702
+Door State = Closed
+Time = 220736
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 220833
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 221908
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 221908
+Door State = Closed
+Time = 221942
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 222040
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 223114
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 223114
+Door State = Closed
+Time = 223148
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 223245
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 224320
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 224320
+Door State = Closed
+Time = 224354
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 224451
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 225526
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 225526
+Door State = Closed
+Time = 225560
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 225657
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 226732
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 226732
+Door State = Closed
+Time = 226765
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 226863
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 227937
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 227937
+Door State = Closed
+Time = 227971
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 228068
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 229143
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 229143
+Door State = Closed
+Time = 229177
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 229274
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 230349
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 230349
+Door State = Closed
+Time = 230383
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 230480
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 231555
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 231555
+Door State = Closed
+Time = 231588
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 231686
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 232760
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 232760
+Door State = Closed
+Time = 232794
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 232891
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 233966
+Soil Moisture = 12
+Dry soil! turning PUMP ON
+Time = 233966
+Door State = Closed
+Time = 234000
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 234097
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 235172
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 235172
+Door State = Closed
+Time = 235206
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 235303
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 236378
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 236378
+Door State = Closed
+Time = 236411
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 236509
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 237583
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 237583
+Door State = Closed
+Time = 237617
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 237714
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 238789
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 238789
+Door State = Closed
+Time = 238823
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 238920
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 239995
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 239995
+Door State = Closed
+Time = 240029
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 240126
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 241201
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 241201
+Door State = Closed
+Time = 241234
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 241332
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 242406
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 242406
+Door State = Closed
+Time = 242440
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 242537
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 243612
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 243612
+Door State = Closed
+Time = 243646
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 243743
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 244818
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 244818
+Door State = Closed
+Time = 244852
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 244950
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 246024
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 246024
+Door State = Closed
+Time = 246057
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 246155
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 247230
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 247230
+Door State = Closed
+Time = 247264
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 247361
+Light intensity = 353.00
+Night Time! turning LIGHTS ON
+Time = 248436
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 248436
+Door State = Closed
+Time = 248470
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 248567
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 249643
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 249643
+Door State = Closed
+Time = 249676
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 249774
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 250848
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 250848
+Door State = Closed
+Time = 250882
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 250979
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 252054
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 252054
+Door State = Closed
+Time = 252088
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 252185
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 253260
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 253260
+Door State = Closed
+Time = 253294
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 253391
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 254466
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 254466
+Door State = Closed
+Time = 254499
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 254597
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 255671
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 255671
+Door State = Closed
+Time = 255705
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 255802
+Light intensity = 353.00
+Night Time! turning LIGHTS ON
+Time = 256877
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 256877
+Door State = Closed
+Time = 256911
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 257008
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 258083
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 258083
+Door State = Closed
+Time = 258117
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 258214
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 259289
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 259289
+Door State = Closed
+Time = 259322
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 259420
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 260494
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 260494
+Door State = Closed
+Time = 260528
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 260625
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 261700
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 261700
+Door State = Closed
+Time = 261734
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 261831
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 262906
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 262906
+Door State = Closed
+Time = 262940
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 263037
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 264112
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 264112
+Door State = Closed
+Time = 264145
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 264243
+Light intensity = 353.00
+Night Time! turning LIGHTS ON
+Time = 265317
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 265317
+Door State = Closed
+Time = 265351
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 265448
+Light intensity = 353.00
+Night Time! turning LIGHTS ON
+Time = 266523
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 266523
+Door State = Closed
+Time = 266557
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 266654
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 267729
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 267729
+Door State = Closed
+Time = 267763
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 267860
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 268935
+Soil Moisture = 12
+Dry soil! turning PUMP ON
+Time = 268935
+Door State = Closed
+Time = 268968
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 269066
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 270140
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 270140
+Door State = Closed
+Time = 270174
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 270271
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 271346
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 271346
+Door State = Closed
+Time = 271380
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 271477
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 272552
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 272552
+Door State = Closed
+Time = 272586
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 272684
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 273758
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 273758
+Door State = Closed
+Time = 273792
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 273889
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 274964
+Soil Moisture = 12
+Dry soil! turning PUMP ON
+Time = 274964
+Door State = Closed
+Time = 274998
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 275095
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 276170
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 276170
+Door State = Closed
+Time = 276204
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 276301
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 277376
+Soil Moisture = 15
+Dry soil! turning PUMP ON
+Time = 277376
+Door State = Closed
+Time = 277409
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 277507
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 278581
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 278581
+Door State = Closed
+Time = 278615
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 278712
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 279787
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 279787
+Door State = Closed
+Time = 279821
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 279918
+Light intensity = 353.00
+Night Time! turning LIGHTS ON
+Time = 280993
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 280993
+Door State = Closed
+Time = 281027
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 281124
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 282199
+Soil Moisture = 12
+Dry soil! turning PUMP ON
+Time = 282199
+Door State = Closed
+Time = 282232
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 282330
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 283404
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 283404
+Door State = Closed
+Time = 283438
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 283535
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 284610
+Soil Moisture = 12
+Dry soil! turning PUMP ON
+Time = 284610
+Door State = Closed
+Time = 284644
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 284741
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 285816
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 285816
+Door State = Closed
+Time = 285850
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 285947
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 287022
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 287022
+Door State = Closed
+Time = 287055
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 287153
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 288227
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 288227
+Door State = Closed
+Time = 288261
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 288358
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 289433
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 289433
+Door State = Closed
+Time = 289467
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 289564
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 290639
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 290639
+Door State = Closed
+Time = 290673
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 290770
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 291845
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 291845
+Door State = Closed
+Time = 291878
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 291976
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 293050
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 293050
+Door State = Closed
+Time = 293084
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 293181
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 294256
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 294256
+Door State = Closed
+Time = 294290
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 294387
+Light intensity = 353.00
+Night Time! turning LIGHTS ON
+Time = 295462
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 295462
+Door State = Closed
+Time = 295496
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 295593
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 296668
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 296668
+Door State = Closed
+Time = 296701
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 296799
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 297873
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 297873
+Door State = Closed
+Time = 297907
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 298004
+Light intensity = 356.00
+Night Time! turning LIGHTS ON
+Time = 299079
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 299079
+Door State = Closed
+Time = 299113
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 299210
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 300285
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 300285
+Door State = Closed
+Time = 300319
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 300417
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 301491
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 301491
+Door State = Closed
+Time = 301524
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 301622
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 302697
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 302697
+Door State = Closed
+Time = 302731
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 302828
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 303903
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 303903
+Door State = Closed
+Time = 303937
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 304034
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 305110
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 305110
+Door State = Closed
+Time = 305143
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 305241
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 306315
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 306315
+Door State = Closed
+Time = 306349
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 306446
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 307521
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 307521
+Door State = Closed
+Time = 307555
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 307652
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 308727
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 308727
+Door State = Closed
+Time = 308761
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 308858
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 309933
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 309933
+Door State = Closed
+Time = 309966
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 310064
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 311138
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 311138
+Door State = Closed
+Time = 311172
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 311269
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 312344
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 312344
+Door State = Closed
+Time = 312378
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 312475
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 313550
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 313550
+Door State = Closed
+Time = 313584
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 313681
+Light intensity = 353.00
+Night Time! turning LIGHTS ON
+Time = 314756
+Soil Moisture = 14
+Dry soil! turning PUMP ON
+Time = 314756
+Door State = Closed
+Time = 314789
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 314887
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 315961
+Soil Moisture = 12
+Dry soil! turning PUMP ON
+Time = 315961
+Door State = Closed
+Time = 315995
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 316092
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 317167
+Soil Moisture = 106
+Dry soil! turning PUMP ON
+Time = 317167
+Door State = Closed
+Time = 317202
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 317299
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 318374
+Soil Moisture = 86
+Dry soil! turning PUMP ON
+Time = 318374
+Door State = Closed
+Time = 318408
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 318505
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 319580
+Soil Moisture = 13
+Dry soil! turning PUMP ON
+Time = 319580
+Door State = Closed
+Time = 319613
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 319711
+Light intensity = 355.00
+Night Time! turning LIGHTS ON
+Time = 320785
+Soil Moisture = 66
+Dry soil! turning PUMP ON
+Time = 320785
+Door State = Closed
+Time = 320819
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 320916
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 321991
+Soil Moisture = 129
+Dry soil! turning PUMP ON
+Time = 321991
+Door State = Closed
+Time = 322026
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 322123
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 323198
+Soil Moisture = 47
+Dry soil! turning PUMP ON
+Time = 323198
+Door State = Closed
+Time = 323232
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 323330
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
+Time = 324404
+Soil Moisture = 19
+Dry soil! turning PUMP ON
+Time = 324404
+Door State = Closed
+Time = 324438
+Humidity (%) = 35.00
+DHT_Temperature  (C) = 23.00
+Too hot! turning FANS ON
+Time = 324535
+Light intensity = 354.00
+Night Time! turning LIGHTS ON
