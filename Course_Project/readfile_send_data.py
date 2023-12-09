@@ -66,14 +66,45 @@ if __name__ == "__main__":
                 light_intensity = float(line.split('=')[-1].strip())
             elif "Soil Moisture" in line:
                 soil_moisture = float(line.split('=')[-1].strip())
+            # elif "Door State" in line:
+            #     door_state = 0 if "Closed" in line else 1
+            # elif "LIGHTS" in line:
+            #     light_state = 1 if "ON" in line else 0
+            # elif "FANS ON" in line:
+            #     fan_state = 1 if "ON" in line else 0
+            # elif "PUMP" in line:
+            #     pump_state = 1 if "ON" in line else 0
             elif "Door State" in line:
-                door_state = 0 if "Closed" in line else 1
+                if "Closed" in line:
+                    door_state = 0 
+                    send_message("ALERT !! DOOR IS OPEN ... ")
+                else:
+                    door_state = 1
+                    send_message("INFO !! DOOR HAS BEEN CLOSED ... ")
+                    
             elif "LIGHTS" in line:
-                light_state = 1 if "ON" in line else 0
+                if "ON" in line:
+                    light_state = 1
+                    send_message("INFO !! LIGHTS are ON ... ")
+                else:
+                    light_state = 0
+                    
+                    
             elif "FANS ON" in line:
-                fan_state = 1 if "ON" in line else 0
+                fan_state = 1 
+                if "ON" in line:
+                    fan_state = 1
+                    send_message("INFO !! FANS are ON ... ")
+                else: 
+                    fan_state = 0
+                    
             elif "PUMP" in line:
-                pump_state = 1 if "ON" in line else 0
+                if "ON" in line:
+                    pump_state = 1
+                    send_message("INFO !!PUMPS are ON ... ")
+                else:
+                    pump_state = 0
+            
 
             # Send the parsed data to the cloud
             send_to_cloud(iotc, temperature, humidity, light_intensity, soil_moisture, door_state, light_state, fan_state, pump_state)
