@@ -45,8 +45,7 @@ def do_analysis(file_path):
 # Call the function and print the results
 sensor_ranges = do_analysis(file_path)
 sensor_ranges
-
-
+ 
         
 def format_sensor_data(sensor_ranges):
     # Create a string representation of the sensor data
